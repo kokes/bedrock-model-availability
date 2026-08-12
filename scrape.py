@@ -6,7 +6,6 @@ from __future__ import annotations
 import argparse
 import json
 import sys
-from datetime import datetime, timezone
 from pathlib import Path
 from urllib.error import URLError
 from urllib.request import Request, urlopen
@@ -117,7 +116,6 @@ def scrape(url: str) -> dict:
 
     return {
         "source_url": url,
-        "scraped_at": datetime.now(timezone.utc).isoformat(),
         "providers": providers,
     }
 

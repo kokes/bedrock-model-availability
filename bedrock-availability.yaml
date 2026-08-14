@@ -1089,6 +1089,18 @@ providers:
           in_region: false
           geo: false
           global: true
+        -
+          region: us-gov-west-1
+          location: GovCloud West
+          in_region: true
+          geo: true
+          global: false
+        -
+          region: us-gov-east-1
+          location: GovCloud East
+          in_region: false
+          geo: true
+          global: false
       model_card: model-card-anthropic-claude-opus-5.html
     -
       name: Claude Sonnet 5
@@ -1295,7 +1307,7 @@ providers:
           region: us-gov-west-1
           location: GovCloud West
           in_region: true
-          geo: false
+          geo: true
           global: false
         -
           region: us-gov-east-1
@@ -3074,19 +3086,19 @@ providers:
           region: us-east-1
           location: N. Virginia
           in_region: false
-          geo: "Legacy (EOL: 2026-05-31)"
+          geo: "Legacy (EOL: 2027-01-08)"
           global: false
         -
           region: us-east-2
           location: Ohio
           in_region: false
-          geo: "Legacy (EOL: 2026-05-31)"
+          geo: "Legacy (EOL: 2027-01-08)"
           global: false
         -
           region: us-west-2
           location: Oregon
           in_region: false
-          geo: "Legacy (EOL: 2026-05-31)"
+          geo: "Legacy (EOL: 2027-01-08)"
           global: false
       model_card: model-card-anthropic-claude-opus-4-1.html
     -
@@ -5935,6 +5947,26 @@ providers:
           geo: false
           global: false
       model_card: model-card-openai-gpt-56-sol.html
+    -
+      name: "Daybreak Red: GPT-5.6 Cyber"
+      regions:
+        -
+          region: us-east-2
+          location: Ohio
+          in_region: true
+          geo: false
+          global: false
+      model_card: model-card-openai-gpt-56-cyber.html
+    -
+      name: "Daybreak Blue: GPT-5.6 Sol"
+      regions:
+        -
+          region: us-east-2
+          location: Ohio
+          in_region: true
+          geo: false
+          global: false
+      model_card: model-card-openai-gpt-daybreak-blue-56-sol.html
     -
       name: GPT-5.6 Terra
       regions:

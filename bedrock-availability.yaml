@@ -219,6 +219,12 @@ providers:
           in_region: true
           geo: false
           global: false
+        -
+          region: us-gov-west-1
+          location: GovCloud
+          in_region: true
+          geo: false
+          global: false
       model_card: model-card-amazon-amazon-nova-multimodal-embeddings.html
     -
       name: Titan Image Generator G1 v2

@@ -1557,73 +1557,139 @@ providers:
           region: us-east-1
           location: N. Virginia
           in_region: false
-          geo: true
-          global: true
+          geo: "Legacy (EOL: 2026-10-14)"
+          global: "Legacy (EOL: 2026-10-14)"
         -
           region: us-east-2
           location: Ohio
           in_region: false
           geo: "Legacy (EOL: 2026-10-14)"
-          global: true
+          global: "Legacy (EOL: 2026-10-14)"
         -
           region: us-west-1
           location: N. California
           in_region: false
-          geo: true
+          geo: "Legacy (EOL: 2026-10-14)"
           global: false
         -
           region: us-west-2
           location: Oregon
           in_region: false
-          geo: true
-          global: true
+          geo: "Legacy (EOL: 2026-10-14)"
+          global: "Legacy (EOL: 2026-10-14)"
         -
           region: eu-central-1
           location: Frankfurt
           in_region: false
-          geo: true
+          geo: "Legacy (EOL: 2026-10-14)"
           global: false
         -
           region: eu-north-1
           location: Stockholm
           in_region: false
-          geo: true
+          geo: "Legacy (EOL: 2026-10-14)"
           global: false
         -
           region: eu-south-1
           location: Milan
           in_region: false
-          geo: true
+          geo: "Legacy (EOL: 2026-10-14)"
           global: false
         -
           region: eu-south-2
           location: Spain
           in_region: false
-          geo: true
+          geo: "Legacy (EOL: 2026-10-14)"
           global: false
         -
           region: eu-west-1
           location: Ireland
           in_region: false
-          geo: true
-          global: true
+          geo: "Legacy (EOL: 2026-10-14)"
+          global: "Legacy (EOL: 2026-10-14)"
         -
           region: eu-west-3
           location: Paris
           in_region: false
-          geo: true
+          geo: "Legacy (EOL: 2026-10-14)"
+          global: false
+        -
+          region: il-central-1
+          location: Tel Aviv
+          in_region: false
+          geo: "Legacy (EOL: 2026-10-14)"
+          global: false
+        -
+          region: ap-east-2
+          location: Taipei
+          in_region: false
+          geo: "Legacy (EOL: 2026-10-14)"
           global: false
         -
           region: ap-northeast-1
           location: Tokyo
           in_region: false
-          geo: true
-          global: true
+          geo: "Legacy (EOL: 2026-10-14)"
+          global: "Legacy (EOL: 2026-10-14)"
         -
-          region: il-central-1
-          location: Tel Aviv
+          region: ap-northeast-2
+          location: Seoul
           in_region: false
-          geo: true
+          geo: "Legacy (EOL: 2026-10-14)"
+          global: false
+        -
+          region: ap-northeast-3
+          location: Osaka
+          in_region: false
+          geo: "Legacy (EOL: 2026-10-14)"
+          global: false
+        -
+          region: ap-south-1
+          location: Mumbai
+          in_region: false
+          geo: "Legacy (EOL: 2026-10-14)"
+          global: false
+        -
+          region: ap-south-2
+          location: Hyderabad
+          in_region: false
+          geo: "Legacy (EOL: 2026-10-14)"
+          global: false
+        -
+          region: ap-southeast-1
+          location: Singapore
+          in_region: false
+          geo: "Legacy (EOL: 2026-10-14)"
+          global: false
+        -
+          region: ap-southeast-2
+          location: Sydney
+          in_region: false
+          geo: "Legacy (EOL: 2026-10-14)"
+          global: false
+        -
+          region: ap-southeast-3
+          location: Jakarta
+          in_region: false
+          geo: "Legacy (EOL: 2026-10-14)"
+          global: false
+        -
+          region: ap-southeast-4
+          location: Melbourne
+          in_region: false
+          geo: "Legacy (EOL: 2026-10-14)"
+          global: false
+        -
+          region: ap-southeast-5
+          location: Malaysia
+          in_region: false
+          geo: "Legacy (EOL: 2026-10-14)"
+          global: false
+        -
+          region: ap-southeast-7
+          location: Thailand
+          in_region: false
+          geo: "Legacy (EOL: 2026-10-14)"
           global: false
       model_card: model-card-anthropic-claude-sonnet-4.html
     -
@@ -3167,7 +3233,7 @@ providers:
         -
           region: eu-west-2
           location: London
-          in_region: true
+          in_region: "Legacy (EOL: 2026-09-10)"
           geo: false
           global: false
         -
@@ -3219,14 +3285,14 @@ providers:
         -
           region: us-east-1
           location: N. Virginia
-          in_region: true
-          geo: true
+          in_region: "Legacy (EOL: 2026-07-30)"
+          geo: "Legacy (EOL: 2026-07-30)"
           global: false
         -
           region: us-west-2
           location: Oregon
-          in_region: true
-          geo: true
+          in_region: "Legacy (EOL: 2026-07-30)"
+          geo: "Legacy (EOL: 2026-07-30)"
           global: false
         -
           region: ca-central-1
@@ -3237,20 +3303,26 @@ providers:
         -
           region: eu-central-1
           location: Frankfurt
-          in_region: true
-          geo: true
+          in_region: "Legacy (EOL: 2026-07-30)"
+          geo: "Legacy (EOL: 2026-07-30)"
           global: false
         -
           region: eu-west-1
           location: Ireland
+          in_region: false
+          geo: "Legacy (EOL: 2026-07-30)"
+          global: false
+        -
+          region: eu-west-2
+          location: London
           in_region: true
-          geo: true
+          geo: false
           global: false
         -
           region: eu-west-3
           location: Paris
-          in_region: true
-          geo: true
+          in_region: false
+          geo: "Legacy (EOL: 2026-07-30)"
           global: false
         -
           region: ap-south-1
@@ -3259,9 +3331,15 @@ providers:
           geo: false
           global: false
         -
+          region: ap-southeast-1
+          location: Singapore
+          in_region: false
+          geo: true
+          global: false
+        -
           region: ap-southeast-2
           location: Sydney
-          in_region: true
+          in_region: "Legacy (EOL: 2026-07-30)"
           geo: false
           global: false
         -
@@ -3276,38 +3354,38 @@ providers:
         -
           region: us-east-1
           location: N. Virginia
-          in_region: false
-          geo: true
+          in_region: "Legacy (EOL: 2026-07-30)"
+          geo: "Legacy (EOL: 2026-07-30)"
           global: false
         -
           region: us-east-2
           location: Ohio
           in_region: false
-          geo: true
+          geo: "Legacy (EOL: 2026-07-30)"
           global: false
         -
           region: us-west-2
           location: Oregon
-          in_region: false
-          geo: true
+          in_region: "Legacy (EOL: 2026-07-30)"
+          geo: "Legacy (EOL: 2026-07-30)"
           global: false
         -
           region: eu-central-1
           location: Frankfurt
-          in_region: false
-          geo: true
+          in_region: "Legacy (EOL: 2026-07-30)"
+          geo: "Legacy (EOL: 2026-07-30)"
           global: false
         -
           region: eu-north-1
           location: Stockholm
           in_region: false
-          geo: true
+          geo: "Legacy (EOL: 2026-07-30)"
           global: false
         -
           region: eu-west-1
           location: Ireland
           in_region: false
-          geo: true
+          geo: "Legacy (EOL: 2026-07-30)"
           global: false
         -
           region: eu-west-2
@@ -3319,6 +3397,12 @@ providers:
           region: eu-west-3
           location: Paris
           in_region: false
+          geo: "Legacy (EOL: 2026-07-30)"
+          global: false
+        -
+          region: ap-south-1
+          location: Mumbai
+          in_region: false
           geo: true
           global: false
     -
@@ -3328,97 +3412,93 @@ providers:
           region: us-east-1
           location: N. Virginia
           in_region: false
-          geo: true
+          geo: "Legacy (EOL: 2026-07-30)"
           global: false
         -
           region: us-east-2
           location: Ohio
           in_region: false
-          geo: true
+          geo: "Legacy (EOL: 2026-07-30)"
           global: false
         -
           region: us-west-2
           location: Oregon
-          in_region: true
+          in_region: false
+          geo: "Legacy (EOL: 2026-07-30)"
+          global: false
+        -
+          region: ap-northeast-2
+          location: Seoul
+          in_region: false
+          geo: true
+          global: false
+        -
+          region: ap-south-1
+          location: Mumbai
+          in_region: false
+          geo: true
+          global: false
+        -
+          region: ap-southeast-1
+          location: Singapore
+          in_region: false
           geo: true
           global: false
         -
           region: ap-southeast-2
           location: Sydney
-          in_region: true
-          geo: false
-          global: false
-    -
-      name: Claude 3.5 Haiku
-      regions:
-        -
-          region: us-east-1
-          location: N. Virginia
           in_region: false
-          geo: "Legacy (EOL: 2026-06-19)"
+          geo: "Legacy (EOL: 2026-07-30)"
           global: false
-        -
-          region: us-east-2
-          location: Ohio
-          in_region: false
-          geo: "Legacy (EOL: 2026-06-19)"
-          global: false
-        -
-          region: us-west-2
-          location: Oregon
-          in_region: "Legacy (EOL: 2026-06-19)"
-          geo: "Legacy (EOL: 2026-06-19)"
-          global: false
-      model_card: model-card-anthropic-claude-3-5-haiku.html
     -
       name: Claude 3.5 Sonnet
       regions:
         -
           region: us-east-1
           location: N. Virginia
-          in_region: true
-          geo: true
+          in_region: "Legacy (EOL: 2026-07-30)"
+          geo: "Legacy (EOL: 2026-07-30)"
           global: false
         -
           region: us-east-2
           location: Ohio
           in_region: false
-          geo: true
+          geo: "Legacy (EOL: 2026-07-30)"
           global: false
         -
           region: us-west-2
           location: Oregon
-          in_region: true
-          geo: true
+          in_region: "Legacy (EOL: 2026-07-30)"
+          geo: "Legacy (EOL: 2026-07-30)"
           global: false
         -
           region: eu-central-1
           location: Frankfurt
-          in_region: true
-          geo: true
+          in_region: "Legacy (EOL: 2026-07-30)"
+          geo: "Legacy (EOL: 2026-07-30)"
           global: false
         -
           region: eu-central-2
           location: Zurich
-          in_region: true
+          in_region: "Legacy (EOL: 2026-07-30)"
           geo: false
           global: false
         -
           region: eu-west-1
           location: Ireland
           in_region: false
-          geo: true
+          geo: "Legacy (EOL: 2026-07-30)"
           global: false
         -
           region: eu-west-3
           location: Paris
           in_region: false
-          geo: true
+          geo: "Legacy (EOL: 2026-07-30)"
           global: false
         -
           region: ap-northeast-1
           location: Tokyo
-          in_region: true
+          in_region: "Legacy (EOL: 2026-07-30)"
           geo: false
           global: false
         -
@@ -3426,6 +3506,12 @@ providers:
           location: Seoul
           in_region: true
           geo: false
+          global: false
+        -
+          region: ap-south-1
+          location: Mumbai
+          in_region: false
+          geo: true
           global: false
         -
           region: ap-southeast-1
@@ -5944,14 +6030,194 @@ providers:
           region: us-east-1
           location: N. Virginia
           in_region: true
-          geo: false
-          global: false
+          geo: true
+          global: true
         -
           region: us-east-2
           location: Ohio
           in_region: true
+          geo: true
+          global: true
+        -
+          region: us-west-1
+          location: N. California
+          in_region: false
+          geo: true
+          global: true
+        -
+          region: us-west-2
+          location: Oregon
+          in_region: false
+          geo: true
+          global: true
+        -
+          region: ca-central-1
+          location: Canada
+          in_region: false
           geo: false
-          global: false
+          global: true
+        -
+          region: ca-west-1
+          location: Calgary
+          in_region: false
+          geo: false
+          global: true
+        -
+          region: eu-central-1
+          location: Frankfurt
+          in_region: false
+          geo: false
+          global: true
+        -
+          region: eu-central-2
+          location: Zurich
+          in_region: false
+          geo: false
+          global: true
+        -
+          region: eu-north-1
+          location: Stockholm
+          in_region: false
+          geo: false
+          global: true
+        -
+          region: eu-south-1
+          location: Milan
+          in_region: false
+          geo: false
+          global: true
+        -
+          region: eu-south-2
+          location: Spain
+          in_region: false
+          geo: false
+          global: true
+        -
+          region: eu-west-1
+          location: Ireland
+          in_region: false
+          geo: false
+          global: true
+        -
+          region: eu-west-2
+          location: London
+          in_region: false
+          geo: false
+          global: true
+        -
+          region: eu-west-3
+          location: Paris
+          in_region: false
+          geo: false
+          global: true
+        -
+          region: ap-east-2
+          location: Taipei
+          in_region: false
+          geo: false
+          global: true
+        -
+          region: ap-northeast-1
+          location: Tokyo
+          in_region: false
+          geo: false
+          global: true
+        -
+          region: ap-northeast-2
+          location: Seoul
+          in_region: false
+          geo: false
+          global: true
+        -
+          region: ap-northeast-3
+          location: Osaka
+          in_region: false
+          geo: false
+          global: true
+        -
+          region: ap-south-1
+          location: Mumbai
+          in_region: false
+          geo: false
+          global: true
+        -
+          region: ap-south-2
+          location: Hyderabad
+          in_region: false
+          geo: false
+          global: true
+        -
+          region: ap-southeast-1
+          location: Singapore
+          in_region: false
+          geo: false
+          global: true
+        -
+          region: ap-southeast-2
+          location: Sydney
+          in_region: false
+          geo: false
+          global: true
+        -
+          region: ap-southeast-3
+          location: Jakarta
+          in_region: false
+          geo: false
+          global: true
+        -
+          region: ap-southeast-4
+          location: Melbourne
+          in_region: false
+          geo: false
+          global: true
+        -
+          region: ap-southeast-5
+          location: Malaysia
+          in_region: false
+          geo: false
+          global: true
+        -
+          region: ap-southeast-6
+          location: New Zealand
+          in_region: false
+          geo: false
+          global: true
+        -
+          region: ap-southeast-7
+          location: Thailand
+          in_region: false
+          geo: false
+          global: true
+        -
+          region: il-central-1
+          location: Tel Aviv
+          in_region: false
+          geo: false
+          global: true
+        -
+          region: me-central-1
+          location: UAE
+          in_region: false
+          geo: false
+          global: true
+        -
+          region: me-south-1
+          location: Bahrain
+          in_region: false
+          geo: false
+          global: true
+        -
+          region: af-south-1
+          location: Cape Town
+          in_region: false
+          geo: false
+          global: true
+        -
+          region: sa-east-1
+          location: São Paulo
+          in_region: false
+          geo: false
+          global: true
       model_card: model-card-openai-gpt-56-sol.html
     -
       name: "Daybreak Red: GPT-5.6 Cyber"
@@ -5980,20 +6246,194 @@ providers:
           region: us-east-1
           location: N. Virginia
           in_region: true
-          geo: false
-          global: false
+          geo: true
+          global: true
         -
           region: us-east-2
           location: Ohio
           in_region: true
-          geo: false
-          global: false
+          geo: true
+          global: true
+        -
+          region: us-west-1
+          location: N. California
+          in_region: false
+          geo: true
+          global: true
         -
           region: us-west-2
           location: Oregon
           in_region: true
+          geo: true
+          global: true
+        -
+          region: ca-central-1
+          location: Canada
+          in_region: false
           geo: false
-          global: false
+          global: true
+        -
+          region: ca-west-1
+          location: Calgary
+          in_region: false
+          geo: false
+          global: true
+        -
+          region: eu-central-1
+          location: Frankfurt
+          in_region: false
+          geo: false
+          global: true
+        -
+          region: eu-central-2
+          location: Zurich
+          in_region: false
+          geo: false
+          global: true
+        -
+          region: eu-north-1
+          location: Stockholm
+          in_region: false
+          geo: false
+          global: true
+        -
+          region: eu-south-1
+          location: Milan
+          in_region: false
+          geo: false
+          global: true
+        -
+          region: eu-south-2
+          location: Spain
+          in_region: false
+          geo: false
+          global: true
+        -
+          region: eu-west-1
+          location: Ireland
+          in_region: false
+          geo: false
+          global: true
+        -
+          region: eu-west-2
+          location: London
+          in_region: false
+          geo: false
+          global: true
+        -
+          region: eu-west-3
+          location: Paris
+          in_region: false
+          geo: false
+          global: true
+        -
+          region: ap-east-2
+          location: Taipei
+          in_region: false
+          geo: false
+          global: true
+        -
+          region: ap-northeast-1
+          location: Tokyo
+          in_region: false
+          geo: false
+          global: true
+        -
+          region: ap-northeast-2
+          location: Seoul
+          in_region: false
+          geo: false
+          global: true
+        -
+          region: ap-northeast-3
+          location: Osaka
+          in_region: false
+          geo: false
+          global: true
+        -
+          region: ap-south-1
+          location: Mumbai
+          in_region: false
+          geo: false
+          global: true
+        -
+          region: ap-south-2
+          location: Hyderabad
+          in_region: false
+          geo: false
+          global: true
+        -
+          region: ap-southeast-1
+          location: Singapore
+          in_region: false
+          geo: false
+          global: true
+        -
+          region: ap-southeast-2
+          location: Sydney
+          in_region: false
+          geo: false
+          global: true
+        -
+          region: ap-southeast-3
+          location: Jakarta
+          in_region: false
+          geo: false
+          global: true
+        -
+          region: ap-southeast-4
+          location: Melbourne
+          in_region: false
+          geo: false
+          global: true
+        -
+          region: ap-southeast-5
+          location: Malaysia
+          in_region: false
+          geo: false
+          global: true
+        -
+          region: ap-southeast-6
+          location: New Zealand
+          in_region: false
+          geo: false
+          global: true
+        -
+          region: ap-southeast-7
+          location: Thailand
+          in_region: false
+          geo: false
+          global: true
+        -
+          region: il-central-1
+          location: Tel Aviv
+          in_region: false
+          geo: false
+          global: true
+        -
+          region: me-central-1
+          location: UAE
+          in_region: false
+          geo: false
+          global: true
+        -
+          region: me-south-1
+          location: Bahrain
+          in_region: false
+          geo: false
+          global: true
+        -
+          region: af-south-1
+          location: Cape Town
+          in_region: false
+          geo: false
+          global: true
+        -
+          region: sa-east-1
+          location: São Paulo
+          in_region: false
+          geo: false
+          global: true
       model_card: model-card-openai-gpt-56-terra.html
     -
       name: GPT-5.6 Luna
@@ -6002,20 +6442,194 @@ providers:
           region: us-east-1
           location: N. Virginia
           in_region: true
-          geo: false
-          global: false
+          geo: true
+          global: true
         -
           region: us-east-2
           location: Ohio
           in_region: true
-          geo: false
-          global: false
+          geo: true
+          global: true
+        -
+          region: us-west-1
+          location: N. California
+          in_region: false
+          geo: true
+          global: true
         -
           region: us-west-2
           location: Oregon
           in_region: true
+          geo: true
+          global: true
+        -
+          region: ca-central-1
+          location: Canada
+          in_region: false
           geo: false
-          global: false
+          global: true
+        -
+          region: ca-west-1
+          location: Calgary
+          in_region: false
+          geo: false
+          global: true
+        -
+          region: eu-central-1
+          location: Frankfurt
+          in_region: false
+          geo: false
+          global: true
+        -
+          region: eu-central-2
+          location: Zurich
+          in_region: false
+          geo: false
+          global: true
+        -
+          region: eu-north-1
+          location: Stockholm
+          in_region: false
+          geo: false
+          global: true
+        -
+          region: eu-south-1
+          location: Milan
+          in_region: false
+          geo: false
+          global: true
+        -
+          region: eu-south-2
+          location: Spain
+          in_region: false
+          geo: false
+          global: true
+        -
+          region: eu-west-1
+          location: Ireland
+          in_region: false
+          geo: false
+          global: true
+        -
+          region: eu-west-2
+          location: London
+          in_region: false
+          geo: false
+          global: true
+        -
+          region: eu-west-3
+          location: Paris
+          in_region: false
+          geo: false
+          global: true
+        -
+          region: ap-east-2
+          location: Taipei
+          in_region: false
+          geo: false
+          global: true
+        -
+          region: ap-northeast-1
+          location: Tokyo
+          in_region: false
+          geo: false
+          global: true
+        -
+          region: ap-northeast-2
+          location: Seoul
+          in_region: false
+          geo: false
+          global: true
+        -
+          region: ap-northeast-3
+          location: Osaka
+          in_region: false
+          geo: false
+          global: true
+        -
+          region: ap-south-1
+          location: Mumbai
+          in_region: false
+          geo: false
+          global: true
+        -
+          region: ap-south-2
+          location: Hyderabad
+          in_region: false
+          geo: false
+          global: true
+        -
+          region: ap-southeast-1
+          location: Singapore
+          in_region: false
+          geo: false
+          global: true
+        -
+          region: ap-southeast-2
+          location: Sydney
+          in_region: false
+          geo: false
+          global: true
+        -
+          region: ap-southeast-3
+          location: Jakarta
+          in_region: false
+          geo: false
+          global: true
+        -
+          region: ap-southeast-4
+          location: Melbourne
+          in_region: false
+          geo: false
+          global: true
+        -
+          region: ap-southeast-5
+          location: Malaysia
+          in_region: false
+          geo: false
+          global: true
+        -
+          region: ap-southeast-6
+          location: New Zealand
+          in_region: false
+          geo: false
+          global: true
+        -
+          region: ap-southeast-7
+          location: Thailand
+          in_region: false
+          geo: false
+          global: true
+        -
+          region: il-central-1
+          location: Tel Aviv
+          in_region: false
+          geo: false
+          global: true
+        -
+          region: me-central-1
+          location: UAE
+          in_region: false
+          geo: false
+          global: true
+        -
+          region: me-south-1
+          location: Bahrain
+          in_region: false
+          geo: false
+          global: true
+        -
+          region: af-south-1
+          location: Cape Town
+          in_region: false
+          geo: false
+          global: true
+        -
+          region: sa-east-1
+          location: São Paulo
+          in_region: false
+          geo: false
+          global: true
       model_card: model-card-openai-gpt-56-luna.html
     -
       name: GPT-5.5

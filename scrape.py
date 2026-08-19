@@ -11,6 +11,7 @@ from urllib.error import URLError
 from urllib.request import Request, urlopen
 
 from lxml import html
+import yaml
 
 DEFAULT_URL = (
     "https://docs.aws.amazon.com/bedrock/latest/userguide/"
@@ -120,144 +121,11 @@ def scrape(url: str) -> dict:
     }
 
 
-def dump_yaml(data: dict, indent: int = 0) -> str:
-    lines: list[str] = []
-
-    def render(value, level: int) -> None:
-        prefix = "  " * level
-        if isinstance(value, dict):
-            for key, item in value.items():
-                if isinstance(item, (dict, list)):
-                    lines.append(f"{prefix}{key}:")
-                    render(item, level + 1)
-                else:
-                    lines.append(f"{prefix}{key}: {format_scalar(item)}")
-        elif isinstance(value, list):
-            for item in value:
-                if isinstance(item, (dict, list)):
-                    lines.append(f"{prefix}-")
-                    render(item, level + 1)
-                else:
-                    lines.append(f"{prefix}- {format_scalar(item)}")
-        else:
-            lines.append(f"{prefix}{format_scalar(value)}")
-
-    render(data, indent)
-    return "\n".join(lines) + "\n"
-
-
-def format_scalar(value) -> str:
-    if isinstance(value, bool):
-        return "true" if value else "false"
-    if value is None:
-        return "null"
-    if isinstance(value, (int, float)):
-        return str(value)
-
-    text = str(value)
-    if (
-        not text
-        or text[0] in "-?:"
-        or any(ch in text for ch in ":#{}[]&*!|>'\"%@`")
-        or text in {"true", "false", "null"}
-    ):
-        return json.dumps(text, ensure_ascii=False)
-    return text
-
-
 def load_data(path: Path) -> dict:
     text = path.read_text(encoding="utf-8")
     if path.suffix == ".json":
         return json.loads(text)
-    return parse_simple_yaml(text)
-
-
-def parse_scalar_value(value: str):
-    value = value.strip()
-    if value == "true":
-        return True
-    if value == "false":
-        return False
-    if value == "null":
-        return None
-    if value and value[0] in "\"'":
-        return json.loads(value)
-    return value
-
-
-def parse_simple_yaml(text: str) -> dict:
-    root: dict = {}
-    stack: list[tuple[int, dict | list]] = [(-1, root)]
-    pending_key: tuple[dict, str, int] | None = None
-
-    lines = [
-        (len(line) - len(line.lstrip(" ")), line.strip())
-        for line in text.splitlines()
-        if line.strip()
-    ]
-
-    index = 0
-    while index < len(lines):
-        indent, line = lines[index]
-
-        while len(stack) > 1 and stack[-1][0] >= indent:
-            stack.pop()
-        if pending_key is not None and indent <= pending_key[2]:
-            pending_key = None
-
-        if pending_key is not None:
-            holder, key, key_indent = pending_key
-            if line.startswith("-"):
-                holder[key] = []
-                stack.append((key_indent, holder[key]))
-            else:
-                holder[key] = {}
-                stack.append((key_indent, holder[key]))
-            pending_key = None
-            continue
-
-        parent = stack[-1][1]
-
-        if line == "-":
-            if not isinstance(parent, list):
-                raise ValueError(f"expected list, got {type(parent).__name__}")
-            item: dict = {}
-            parent.append(item)
-            stack.append((indent, item))
-            index += 1
-            continue
-
-        if line.startswith("- "):
-            if not isinstance(parent, list):
-                raise ValueError(f"expected list, got {type(parent).__name__}")
-            item = {}
-            parent.append(item)
-            stack.append((indent, item))
-            key, _, rest = line[2:].partition(":")
-            if not key.strip():
-                raise ValueError(f"invalid list item: {line!r}")
-            if rest.strip():
-                item[key.strip()] = parse_scalar_value(rest)
-            else:
-                pending_key = (item, key.strip(), indent)
-            index += 1
-            continue
-
-        key, _, rest = line.partition(":")
-        if not key.strip():
-            raise ValueError(f"invalid line: {line!r}")
-        if not isinstance(parent, dict):
-            raise ValueError(f"expected dict, got {type(parent).__name__}")
-
-        key = key.strip()
-        rest = rest.strip()
-        if rest:
-            parent[key] = parse_scalar_value(rest)
-        else:
-            pending_key = (parent, key, indent)
-        index += 1
-
-    return root
+    return yaml.safe_load(text)
 
 
 def format_model_id(provider: str, name: str) -> str:
@@ -375,7 +243,12 @@ def write_output(data: dict, output_path: Path, output_format: str) -> None:
     if output_format == "json":
         content = json.dumps(data, indent=2, ensure_ascii=False) + "\n"
     else:
-        content = dump_yaml(data)
+        content = yaml.safe_dump(
+            data,
+            allow_unicode=True,
+            sort_keys=False,
+            default_flow_style=False,
+        )
 
     output_path.write_text(content, encoding="utf-8")
 
@@ -420,7 +293,7 @@ def main(argv: list[str] | None = None) -> int:
     if output_path.exists():
         try:
             previous = load_data(output_path)
-        except (OSError, ValueError, json.JSONDecodeError) as exc:
+        except (OSError, ValueError, json.JSONDecodeError, yaml.YAMLError) as exc:
             print(f"error: could not read {output_path}: {exc}", file=sys.stderr)
             return 1
 

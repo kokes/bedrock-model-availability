@@ -19,13 +19,12 @@ jobs:
     - name: Fetch latest data
       run: |-
         python3 -m pip install lxml
-        python3 scrape.py -f yaml -o bedrock-availability.yaml
+        python3 scrape.py -f yaml -o bedrock-availability.yaml --print-commit-message > commit-msg.txt
     - name: Commit and push if it changed
       run: |-
         git config user.name "Automated"
         git config user.email "actions@users.noreply.github.com"
         git add bedrock-availability.yaml
-        git add -A
-        timestamp=$(date -u)
-        git commit -m "Updates" || exit 0
+        git diff --staged --quiet && exit 0
+        git commit -F commit-msg.txt
         git push

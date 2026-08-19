@@ -165,6 +165,212 @@ def format_scalar(value) -> str:
     return text
 
 
+def load_data(path: Path) -> dict:
+    text = path.read_text(encoding="utf-8")
+    if path.suffix == ".json":
+        return json.loads(text)
+    return parse_simple_yaml(text)
+
+
+def parse_scalar_value(value: str):
+    value = value.strip()
+    if value == "true":
+        return True
+    if value == "false":
+        return False
+    if value == "null":
+        return None
+    if value and value[0] in "\"'":
+        return json.loads(value)
+    return value
+
+
+def parse_simple_yaml(text: str) -> dict:
+    root: dict = {}
+    stack: list[tuple[int, dict | list]] = [(-1, root)]
+    pending_key: tuple[dict, str, int] | None = None
+
+    lines = [
+        (len(line) - len(line.lstrip(" ")), line.strip())
+        for line in text.splitlines()
+        if line.strip()
+    ]
+
+    index = 0
+    while index < len(lines):
+        indent, line = lines[index]
+
+        while len(stack) > 1 and stack[-1][0] >= indent:
+            stack.pop()
+        if pending_key is not None and indent <= pending_key[2]:
+            pending_key = None
+
+        if pending_key is not None:
+            holder, key, key_indent = pending_key
+            if line.startswith("-"):
+                holder[key] = []
+                stack.append((key_indent, holder[key]))
+            else:
+                holder[key] = {}
+                stack.append((key_indent, holder[key]))
+            pending_key = None
+            continue
+
+        parent = stack[-1][1]
+
+        if line == "-":
+            if not isinstance(parent, list):
+                raise ValueError(f"expected list, got {type(parent).__name__}")
+            item: dict = {}
+            parent.append(item)
+            stack.append((indent, item))
+            index += 1
+            continue
+
+        if line.startswith("- "):
+            if not isinstance(parent, list):
+                raise ValueError(f"expected list, got {type(parent).__name__}")
+            item = {}
+            parent.append(item)
+            stack.append((indent, item))
+            key, _, rest = line[2:].partition(":")
+            if not key.strip():
+                raise ValueError(f"invalid list item: {line!r}")
+            if rest.strip():
+                item[key.strip()] = parse_scalar_value(rest)
+            else:
+                pending_key = (item, key.strip(), indent)
+            index += 1
+            continue
+
+        key, _, rest = line.partition(":")
+        if not key.strip():
+            raise ValueError(f"invalid line: {line!r}")
+        if not isinstance(parent, dict):
+            raise ValueError(f"expected dict, got {type(parent).__name__}")
+
+        key = key.strip()
+        rest = rest.strip()
+        if rest:
+            parent[key] = parse_scalar_value(rest)
+        else:
+            pending_key = (parent, key, indent)
+        index += 1
+
+    return root
+
+
+def format_model_id(provider: str, name: str) -> str:
+    return f"{provider.lower()}/{name.lower()}"
+
+
+def format_availability(value) -> str:
+    if isinstance(value, bool):
+        return "true" if value else "false"
+    return str(value)
+
+
+def index_models(data: dict) -> dict[tuple[str, str], dict]:
+    models: dict[tuple[str, str], dict] = {}
+    for provider, provider_models in data.get("providers", {}).items():
+        for model in provider_models:
+            models[(provider, model["name"])] = model
+    return models
+
+
+def region_index(model: dict) -> dict[str, dict]:
+    return {region["region"]: region for region in model.get("regions", [])}
+
+
+def format_region_list(regions: list[str], max_show: int = 8) -> str:
+    if len(regions) <= max_show:
+        return ", ".join(regions)
+    shown = ", ".join(regions[:max_show])
+    return f"{shown}, ... (+{len(regions) - max_show} more)"
+
+
+def diff_regions(old_model: dict, new_model: dict) -> list[str]:
+    old_regions = region_index(old_model)
+    new_regions = region_index(new_model)
+    lines: list[str] = []
+
+    added = sorted(set(new_regions) - set(old_regions))
+    removed = sorted(set(old_regions) - set(new_regions))
+    if added:
+        lines.append(f"added regions ({len(added)}): {format_region_list(added)}")
+    if removed:
+        lines.append(f"removed regions ({len(removed)}): {format_region_list(removed)}")
+
+    field_changes: dict[tuple[str, str, str], list[str]] = {}
+    for region in sorted(set(old_regions) & set(new_regions)):
+        old_entry = old_regions[region]
+        new_entry = new_regions[region]
+        for field in ("location", "in_region", "geo", "global"):
+            old_value = old_entry.get(field)
+            new_value = new_entry.get(field)
+            if old_value != new_value:
+                key = (
+                    field,
+                    format_availability(old_value),
+                    format_availability(new_value),
+                )
+                field_changes.setdefault(key, []).append(region)
+
+    for (field, old_value, new_value), regions in sorted(field_changes.items()):
+        if len(regions) == 1:
+            lines.append(f"{regions[0]} {field}: {old_value} -> {new_value}")
+        else:
+            lines.append(
+                f"{field}: {old_value} -> {new_value} in {len(regions)} regions "
+                f"({format_region_list(regions)})"
+            )
+
+    return lines
+
+
+def diff_models(old: dict, new: dict) -> tuple[list[str], list[str], list[list[str]]]:
+    old_models = index_models(old)
+    new_models = index_models(new)
+    added: list[str] = []
+    removed: list[str] = []
+    changed: list[list[str]] = []
+
+    for key in sorted(set(new_models) - set(old_models)):
+        provider, name = key
+        added.append(f"{format_model_id(provider, name)}: added model")
+
+    for key in sorted(set(old_models) - set(new_models)):
+        provider, name = key
+        removed.append(f"{format_model_id(provider, name)}: removed model")
+
+    for key in sorted(set(old_models) & set(new_models)):
+        provider, name = key
+        details = diff_regions(old_models[key], new_models[key])
+        if details:
+            changed.append([format_model_id(provider, name), *details])
+
+    return added, removed, changed
+
+
+def format_commit_message(old: dict, new: dict) -> str:
+    added, removed, changed = diff_models(old, new)
+    headline = (
+        f"Changed: {len(changed)}, removed: {len(removed)}, added: {len(added)}"
+    )
+
+    body_lines: list[str] = []
+    body_lines.extend(added)
+    body_lines.extend(removed)
+    for entry in changed:
+        body_lines.append(entry[0] + ":")
+        for detail in entry[1:]:
+            body_lines.append(f"  {detail}")
+
+    if body_lines:
+        return f"{headline}\n\n" + "\n".join(body_lines)
+    return headline
+
+
 def write_output(data: dict, output_path: Path, output_format: str) -> None:
     if output_format == "json":
         content = json.dumps(data, indent=2, ensure_ascii=False) + "\n"
@@ -196,6 +402,11 @@ def build_parser() -> argparse.ArgumentParser:
         default="yaml",
         help="Output format (default: yaml)",
     )
+    parser.add_argument(
+        "--print-commit-message",
+        action="store_true",
+        help="Print a commit message comparing previous and new output",
+    )
     return parser
 
 
@@ -205,6 +416,14 @@ def main(argv: list[str] | None = None) -> int:
 
     output_path = args.output or Path(f"bedrock-availability.{args.format}")
 
+    previous = None
+    if output_path.exists():
+        try:
+            previous = load_data(output_path)
+        except (OSError, ValueError, json.JSONDecodeError) as exc:
+            print(f"error: could not read {output_path}: {exc}", file=sys.stderr)
+            return 1
+
     try:
         data = scrape(args.url)
     except (URLError, TimeoutError, ValueError) as exc:
@@ -212,6 +431,14 @@ def main(argv: list[str] | None = None) -> int:
         return 1
 
     write_output(data, output_path, args.format)
+
+    if args.print_commit_message:
+        if previous is None:
+            model_count = sum(len(models) for models in data["providers"].values())
+            print(f"Changed: 0, removed: 0, added: {model_count}\n")
+            print(f"Initial import of {model_count} models")
+        else:
+            print(format_commit_message(previous, data))
 
     model_count = sum(len(models) for models in data["providers"].values())
     print(

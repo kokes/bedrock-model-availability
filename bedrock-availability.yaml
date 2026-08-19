@@ -645,19 +645,19 @@ providers:
         -
           region: us-east-1
           location: N. Virginia
-          in_region: true
+          in_region: "Legacy (EOL: 2026-09-30)"
           geo: false
           global: false
         -
           region: eu-west-1
           location: Ireland
-          in_region: true
+          in_region: "Legacy (EOL: 2026-09-30)"
           geo: false
           global: false
         -
           region: ap-northeast-1
           location: Tokyo
-          in_region: true
+          in_region: "Legacy (EOL: 2026-09-30)"
           geo: false
           global: false
       model_card: model-card-amazon-nova-reel.html
@@ -779,13 +779,13 @@ providers:
         -
           region: eu-west-1
           location: Ireland
-          in_region: true
+          in_region: "Legacy (EOL: 2026-09-30)"
           geo: false
           global: false
         -
           region: ap-northeast-1
           location: Tokyo
-          in_region: true
+          in_region: "Legacy (EOL: 2026-09-30)"
           geo: false
           global: false
       model_card: model-card-amazon-nova-canvas.html
@@ -6354,13 +6354,13 @@ providers:
           region: ap-south-1
           location: Mumbai
           in_region: false
-          geo: false
+          geo: true
           global: true
         -
           region: ap-south-2
           location: Hyderabad
           in_region: false
-          geo: false
+          geo: true
           global: true
         -
           region: ap-southeast-1
@@ -6550,13 +6550,13 @@ providers:
           region: ap-south-1
           location: Mumbai
           in_region: false
-          geo: false
+          geo: true
           global: true
         -
           region: ap-south-2
           location: Hyderabad
           in_region: false
-          geo: false
+          geo: true
           global: true
         -
           region: ap-southeast-1
@@ -8058,21 +8058,217 @@ providers:
           region: us-west-2
           location: Oregon
           in_region: true
-          geo: false
+          geo: true
           global: false
         -
           region: us-east-1
           location: N. Virginia
           in_region: true
-          geo: false
+          geo: true
           global: false
         -
           region: us-east-2
           location: Ohio
           in_region: true
-          geo: false
+          geo: true
           global: false
       model_card: model-card-xai-grok-4-3.html
+    -
+      name: Grok 4.6
+      regions:
+        -
+          region: us-east-1
+          location: N. Virginia
+          in_region: false
+          geo: true
+          global: true
+        -
+          region: us-east-2
+          location: Ohio
+          in_region: false
+          geo: true
+          global: true
+        -
+          region: us-west-1
+          location: N. California
+          in_region: false
+          geo: true
+          global: true
+        -
+          region: us-west-2
+          location: Oregon
+          in_region: false
+          geo: true
+          global: true
+        -
+          region: ca-central-1
+          location: Canada
+          in_region: false
+          geo: false
+          global: true
+        -
+          region: ca-west-1
+          location: Calgary
+          in_region: false
+          geo: false
+          global: true
+        -
+          region: eu-central-1
+          location: Frankfurt
+          in_region: false
+          geo: false
+          global: true
+        -
+          region: eu-central-2
+          location: Zurich
+          in_region: false
+          geo: false
+          global: true
+        -
+          region: eu-north-1
+          location: Stockholm
+          in_region: false
+          geo: false
+          global: true
+        -
+          region: eu-south-1
+          location: Milan
+          in_region: false
+          geo: false
+          global: true
+        -
+          region: eu-south-2
+          location: Spain
+          in_region: false
+          geo: false
+          global: true
+        -
+          region: eu-west-1
+          location: Ireland
+          in_region: false
+          geo: false
+          global: true
+        -
+          region: eu-west-2
+          location: London
+          in_region: false
+          geo: false
+          global: true
+        -
+          region: eu-west-3
+          location: Paris
+          in_region: false
+          geo: false
+          global: true
+        -
+          region: ap-east-2
+          location: Taipei
+          in_region: false
+          geo: false
+          global: true
+        -
+          region: ap-northeast-1
+          location: Tokyo
+          in_region: false
+          geo: false
+          global: true
+        -
+          region: ap-northeast-2
+          location: Seoul
+          in_region: false
+          geo: false
+          global: true
+        -
+          region: ap-northeast-3
+          location: Osaka
+          in_region: false
+          geo: false
+          global: true
+        -
+          region: ap-south-1
+          location: Mumbai
+          in_region: false
+          geo: false
+          global: true
+        -
+          region: ap-south-2
+          location: Hyderabad
+          in_region: false
+          geo: false
+          global: true
+        -
+          region: ap-southeast-1
+          location: Singapore
+          in_region: false
+          geo: false
+          global: true
+        -
+          region: ap-southeast-2
+          location: Sydney
+          in_region: false
+          geo: false
+          global: true
+        -
+          region: ap-southeast-3
+          location: Jakarta
+          in_region: false
+          geo: false
+          global: true
+        -
+          region: ap-southeast-4
+          location: Melbourne
+          in_region: false
+          geo: false
+          global: true
+        -
+          region: ap-southeast-5
+          location: Malaysia
+          in_region: false
+          geo: false
+          global: true
+        -
+          region: ap-southeast-6
+          location: New Zealand
+          in_region: false
+          geo: false
+          global: true
+        -
+          region: ap-southeast-7
+          location: Thailand
+          in_region: false
+          geo: false
+          global: true
+        -
+          region: il-central-1
+          location: Tel Aviv
+          in_region: false
+          geo: false
+          global: true
+        -
+          region: me-central-1
+          location: UAE
+          in_region: false
+          geo: false
+          global: true
+        -
+          region: me-south-1
+          location: Bahrain
+          in_region: false
+          geo: false
+          global: true
+        -
+          region: af-south-1
+          location: Cape Town
+          in_region: false
+          geo: false
+          global: true
+        -
+          region: sa-east-1
+          location: São Paulo
+          in_region: false
+          geo: false
+          global: true
+      model_card: model-card-xai-grok-4-6.html
   Z.AI:
     -
       name: GLM 4.7 Flash

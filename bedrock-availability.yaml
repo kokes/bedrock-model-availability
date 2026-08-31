@@ -6792,6 +6792,16 @@ providers:
       in_region: false
       geo: true
       global: true
+    - region: us-gov-west-1
+      location: GovCloud West
+      in_region: false
+      geo: true
+      global: false
+    - region: us-gov-east-1
+      location: GovCloud East
+      in_region: true
+      geo: true
+      global: false
     - region: ca-central-1
       location: Canada
       in_region: false

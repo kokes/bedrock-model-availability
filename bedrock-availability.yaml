@@ -5396,6 +5396,94 @@ providers:
       global: false
     model_card: model-card-nvidia-nemotron-super-3-120b.html
   OpenAI:
+  - name: GPT-6 Astra
+    regions:
+    - region: us-east-1
+      location: N. Virginia
+      in_region: false
+      geo: true
+      global: true
+    - region: us-east-2
+      location: Ohio
+      in_region: false
+      geo: true
+      global: true
+    - region: us-west-1
+      location: N. California
+      in_region: false
+      geo: true
+      global: true
+    - region: us-west-2
+      location: Oregon
+      in_region: true
+      geo: true
+      global: true
+    - region: ca-central-1
+      location: Canada
+      in_region: false
+      geo: true
+      global: true
+    - region: eu-central-1
+      location: Frankfurt
+      in_region: false
+      geo: false
+      global: true
+    - region: eu-north-1
+      location: Stockholm
+      in_region: false
+      geo: false
+      global: true
+    - region: eu-west-1
+      location: Ireland
+      in_region: false
+      geo: false
+      global: true
+    - region: eu-west-2
+      location: London
+      in_region: false
+      geo: false
+      global: true
+    - region: eu-west-3
+      location: Paris
+      in_region: false
+      geo: false
+      global: true
+    - region: ap-northeast-1
+      location: Tokyo
+      in_region: false
+      geo: false
+      global: true
+    - region: ap-northeast-2
+      location: Seoul
+      in_region: false
+      geo: false
+      global: true
+    - region: ap-northeast-3
+      location: Osaka
+      in_region: false
+      geo: false
+      global: true
+    - region: ap-south-1
+      location: Mumbai
+      in_region: false
+      geo: false
+      global: true
+    - region: ap-southeast-1
+      location: Singapore
+      in_region: false
+      geo: false
+      global: true
+    - region: ap-southeast-2
+      location: Sydney
+      in_region: false
+      geo: false
+      global: true
+    - region: sa-east-1
+      location: São Paulo
+      in_region: false
+      geo: false
+      global: true
+    model_card: model-card-openai-gpt-6-astra.html
   - name: GPT-5.6 Sol
     regions:
     - region: us-east-1

@@ -1677,19 +1677,6 @@ providers:
       geo: false
       global: true
     model_card: model-card-anthropic-claude-fable-5.html
-  - name: Claude Mythos Preview
-    regions:
-    - region: us-east-1
-      location: N. Virginia
-      in_region: true
-      geo: false
-      global: false
-    - region: ap-southeast-4
-      location: Melbourne
-      in_region: true
-      geo: false
-      global: false
-    model_card: model-card-anthropic-claude-mythos-preview.html
   - name: Claude Sonnet 4
     regions:
     - region: us-east-1

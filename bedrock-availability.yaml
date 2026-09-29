@@ -799,6 +799,184 @@ providers:
       global: false
     model_card: model-card-amazon-nova-premier.html
   Anthropic:
+  - name: Claude Sonnet 5.5
+    regions:
+    - region: us-east-1
+      location: N. Virginia
+      in_region: false
+      geo: false
+      global: true
+    - region: us-east-2
+      location: Ohio
+      in_region: false
+      geo: false
+      global: true
+    - region: us-west-1
+      location: N. California
+      in_region: false
+      geo: false
+      global: true
+    - region: us-west-2
+      location: Oregon
+      in_region: false
+      geo: false
+      global: true
+    - region: ca-central-1
+      location: Canada
+      in_region: false
+      geo: false
+      global: true
+    - region: ca-west-1
+      location: Calgary
+      in_region: false
+      geo: false
+      global: true
+    - region: eu-central-1
+      location: Frankfurt
+      in_region: false
+      geo: false
+      global: true
+    - region: eu-central-2
+      location: Zurich
+      in_region: false
+      geo: false
+      global: true
+    - region: eu-north-1
+      location: Stockholm
+      in_region: false
+      geo: false
+      global: true
+    - region: eu-south-1
+      location: Milan
+      in_region: false
+      geo: false
+      global: true
+    - region: eu-south-2
+      location: Spain
+      in_region: false
+      geo: false
+      global: true
+    - region: eu-west-1
+      location: Ireland
+      in_region: false
+      geo: false
+      global: true
+    - region: eu-west-2
+      location: London
+      in_region: false
+      geo: false
+      global: true
+    - region: eu-west-3
+      location: Paris
+      in_region: false
+      geo: false
+      global: true
+    - region: ap-southeast-2
+      location: Sydney
+      in_region: false
+      geo: false
+      global: true
+    - region: ap-southeast-4
+      location: Melbourne
+      in_region: false
+      geo: false
+      global: true
+    - region: ap-east-2
+      location: Taipei
+      in_region: false
+      geo: false
+      global: true
+    - region: ap-northeast-1
+      location: Tokyo
+      in_region: false
+      geo: false
+      global: true
+    - region: ap-northeast-2
+      location: Seoul
+      in_region: false
+      geo: false
+      global: true
+    - region: ap-northeast-3
+      location: Osaka
+      in_region: false
+      geo: false
+      global: true
+    - region: ap-south-1
+      location: Mumbai
+      in_region: false
+      geo: false
+      global: true
+    - region: ap-south-2
+      location: Hyderabad
+      in_region: false
+      geo: false
+      global: true
+    - region: ap-southeast-1
+      location: Singapore
+      in_region: false
+      geo: false
+      global: true
+    - region: ap-southeast-3
+      location: Jakarta
+      in_region: false
+      geo: false
+      global: true
+    - region: ap-southeast-5
+      location: Malaysia
+      in_region: false
+      geo: false
+      global: true
+    - region: ap-southeast-6
+      location: New Zealand
+      in_region: false
+      geo: false
+      global: true
+    - region: ap-southeast-7
+      location: Thailand
+      in_region: false
+      geo: false
+      global: true
+    - region: il-central-1
+      location: Tel Aviv
+      in_region: false
+      geo: false
+      global: true
+    - region: me-central-1
+      location: UAE
+      in_region: false
+      geo: false
+      global: true
+    - region: me-south-1
+      location: Bahrain
+      in_region: false
+      geo: false
+      global: true
+    - region: af-south-1
+      location: Cape Town
+      in_region: false
+      geo: false
+      global: true
+    - region: sa-east-1
+      location: São Paulo
+      in_region: false
+      geo: false
+      global: true
+    - region: mx-central-1
+      location: Mexico
+      in_region: false
+      geo: false
+      global: true
+    - region: us-gov-west-1
+      location: GovCloud West
+      in_region: true
+      geo: true
+      global: false
+    - region: us-gov-east-1
+      location: GovCloud East
+      in_region: false
+      geo: true
+      global: false
+    model_card: model-card-anthropic-claude-sonnet-5-5.html
   - name: Claude Opus 5.5
     regions:
     - region: us-east-1
@@ -7509,29 +7687,149 @@ providers:
       global: false
     model_card: model-card-writer-palmyra-x4.html
   xAI:
-  - name: Grok 4.3
+  - name: Grok 4.7
     regions:
-    - region: us-west-2
-      location: Oregon
-      in_region: true
-      geo: true
-      global: false
     - region: us-east-1
       location: N. Virginia
-      in_region: true
+      in_region: false
       geo: true
-      global: false
+      global: true
     - region: us-east-2
       location: Ohio
-      in_region: true
+      in_region: false
       geo: true
-      global: false
-    - region: us-gov-west-1
-      location: GovCloud West
-      in_region: true
+      global: true
+    - region: us-west-1
+      location: N. California
+      in_region: false
+      geo: true
+      global: true
+    - region: us-west-2
+      location: Oregon
+      in_region: false
+      geo: true
+      global: true
+    - region: ca-central-1
+      location: Canada
+      in_region: false
       geo: false
-      global: false
-    model_card: model-card-xai-grok-4-3.html
+      global: true
+    - region: eu-north-1
+      location: Stockholm
+      in_region: false
+      geo: false
+      global: true
+    - region: eu-west-1
+      location: Ireland
+      in_region: false
+      geo: false
+      global: true
+    - region: eu-west-2
+      location: London
+      in_region: false
+      geo: false
+      global: true
+    - region: eu-west-3
+      location: Paris
+      in_region: false
+      geo: false
+      global: true
+    - region: eu-central-1
+      location: Frankfurt
+      in_region: false
+      geo: false
+      global: true
+    - region: eu-central-2
+      location: Zurich
+      in_region: false
+      geo: false
+      global: true
+    - region: eu-south-1
+      location: Milan
+      in_region: false
+      geo: false
+      global: true
+    - region: eu-south-2
+      location: Spain
+      in_region: false
+      geo: false
+      global: true
+    - region: ap-northeast-1
+      location: Tokyo
+      in_region: false
+      geo: false
+      global: true
+    - region: ap-northeast-2
+      location: Seoul
+      in_region: false
+      geo: false
+      global: true
+    - region: ap-northeast-3
+      location: Osaka
+      in_region: false
+      geo: false
+      global: true
+    - region: ap-south-1
+      location: Mumbai
+      in_region: false
+      geo: false
+      global: true
+    - region: ap-south-2
+      location: Hyderabad
+      in_region: false
+      geo: false
+      global: true
+    - region: ap-southeast-1
+      location: Singapore
+      in_region: false
+      geo: false
+      global: true
+    - region: ap-southeast-2
+      location: Sydney
+      in_region: false
+      geo: false
+      global: true
+    - region: ap-southeast-3
+      location: Jakarta
+      in_region: false
+      geo: false
+      global: true
+    - region: ap-southeast-4
+      location: Melbourne
+      in_region: false
+      geo: false
+      global: true
+    - region: ap-southeast-5
+      location: Malaysia
+      in_region: false
+      geo: false
+      global: true
+    - region: ap-southeast-7
+      location: Thailand
+      in_region: false
+      geo: false
+      global: true
+    - region: ap-east-2
+      location: Taipei
+      in_region: false
+      geo: false
+      global: true
+    - region: me-central-1
+      location: UAE
+      in_region: false
+      geo: false
+      global: true
+    - region: il-central-1
+      location: Tel Aviv
+      in_region: false
+      geo: false
+      global: true
+    - region: sa-east-1
+      location: São Paulo
+      in_region: false
+      geo: false
+      global: true
+    model_card: model-card-xai-grok-4-7.html
   - name: Grok 4.6
     regions:
     - region: us-east-1
@@ -7705,6 +8003,29 @@ providers:
       geo: false
       global: true
     model_card: model-card-xai-grok-4-6.html
+  - name: Grok 4.3
+    regions:
+    - region: us-west-2
+      location: Oregon
+      in_region: true
+      geo: true
+      global: false
+    - region: us-east-1
+      location: N. Virginia
+      in_region: true
+      geo: true
+      global: false
+    - region: us-east-2
+      location: Ohio
+      in_region: true
+      geo: true
+      global: false
+    - region: us-gov-west-1
+      location: GovCloud West
+      in_region: true
+      geo: false
+      global: false
+    model_card: model-card-xai-grok-4-3.html
   Z.AI:
   - name: GLM 4.7 Flash
     regions:

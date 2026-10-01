@@ -19,6 +19,7 @@ DEFAULT_URL = (
 )
 PROVIDER_HEADING_PREFIX = "model-regions-"
 INFERENCE_COLUMNS = ("in_region", "geo", "global")
+FIRST_COLUMN_HEADERS = frozenset({"region", "endpoint and scope"})
 
 
 def fetch_page(url: str, timeout: float = 60.0) -> bytes:
@@ -48,12 +49,45 @@ def parse_region(cell) -> dict[str, str]:
         raise ValueError(f"region cell missing code element: {cell.text_content()!r}")
 
     region = code_el.text_content().strip()
+    location = parse_location_suffix(cell, region)
+
+    return {"region": region, "location": location}
+
+
+def parse_location_suffix(cell, region: str) -> str:
     location = cell.text_content().strip()
     location = location.removeprefix(region).strip()
     if location.startswith("(") and location.endswith(")"):
         location = location[1:-1].strip()
+    return location
 
-    return {"region": region, "location": location}
+
+def parse_endpoint_scope(cell) -> dict[str, str]:
+    codes = cell.xpath(".//code")
+    if not codes:
+        raise ValueError(
+            f"endpoint cell missing code element: {cell.text_content()!r}"
+        )
+
+    entry: dict[str, str] = {"endpoint": codes[0].text_content().strip()}
+    if len(codes) >= 2:
+        region = codes[1].text_content().strip()
+        entry["region"] = region
+        location = (codes[1].tail or "").strip()
+        if location.startswith("(") and location.endswith(")"):
+            location = location[1:-1].strip()
+        if location:
+            entry["location"] = location
+        return entry
+
+    text = cell.text_content().strip()
+    for separator in ("—", "–", "-"):
+        if separator in text:
+            scope = text.split(separator, 1)[1].strip()
+            if scope:
+                entry["scope"] = scope
+            break
+    return entry
 
 
 def parse_model_table(table) -> dict:
@@ -71,16 +105,20 @@ def parse_model_table(table) -> dict:
 
     header_cells = table.xpath(".//thead//th")
     columns = [cell.text_content().strip().lower() for cell in header_cells]
-    if columns[0] != "region" or len(columns) != 4:
+    if len(columns) != 4 or columns[0] not in FIRST_COLUMN_HEADERS:
         raise ValueError(f"unexpected table columns: {columns}")
 
+    endpoint_style = columns[0] == "endpoint and scope"
     regions: list[dict] = []
     for row in table.xpath(".//tr[td]"):
         cells = row.xpath("./td")
         if len(cells) != 4:
             continue
 
-        entry = parse_region(cells[0])
+        if endpoint_style:
+            entry = parse_endpoint_scope(cells[0])
+        else:
+            entry = parse_region(cells[0])
         for column_name, cell in zip(INFERENCE_COLUMNS, cells[1:]):
             entry[column_name] = parse_availability(cell)
         regions.append(entry)
@@ -146,8 +184,19 @@ def index_models(data: dict) -> dict[tuple[str, str], dict]:
     return models
 
 
+def region_entry_key(entry: dict) -> str:
+    if "region" in entry:
+        endpoint = entry.get("endpoint")
+        if endpoint:
+            return f"{endpoint}:{entry['region']}"
+        return entry["region"]
+    endpoint = entry.get("endpoint", "")
+    scope = entry.get("scope", "")
+    return f"{endpoint}:{scope}"
+
+
 def region_index(model: dict) -> dict[str, dict]:
-    return {region["region"]: region for region in model.get("regions", [])}
+    return {region_entry_key(region): region for region in model.get("regions", [])}
 
 
 def format_region_list(regions: list[str], max_show: int = 8) -> str:
@@ -173,7 +222,7 @@ def diff_regions(old_model: dict, new_model: dict) -> list[str]:
     for region in sorted(set(old_regions) & set(new_regions)):
         old_entry = old_regions[region]
         new_entry = new_regions[region]
-        for field in ("location", "in_region", "geo", "global"):
+        for field in ("endpoint", "scope", "location", "in_region", "geo", "global"):
             old_value = old_entry.get(field)
             new_value = new_entry.get(field)
             if old_value != new_value:

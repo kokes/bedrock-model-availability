@@ -804,72 +804,72 @@ providers:
     - region: us-east-1
       location: N. Virginia
       in_region: false
-      geo: false
+      geo: true
       global: true
     - region: us-east-2
       location: Ohio
       in_region: false
-      geo: false
+      geo: true
       global: true
     - region: us-west-1
       location: N. California
       in_region: false
-      geo: false
+      geo: true
       global: true
     - region: us-west-2
       location: Oregon
       in_region: false
-      geo: false
+      geo: true
       global: true
     - region: ca-central-1
       location: Canada
       in_region: false
-      geo: false
+      geo: true
       global: true
     - region: ca-west-1
       location: Calgary
       in_region: false
-      geo: false
+      geo: true
       global: true
     - region: eu-central-1
       location: Frankfurt
       in_region: false
-      geo: false
+      geo: true
       global: true
     - region: eu-central-2
       location: Zurich
       in_region: false
-      geo: false
+      geo: true
       global: true
     - region: eu-north-1
       location: Stockholm
       in_region: false
-      geo: false
+      geo: true
       global: true
     - region: eu-south-1
       location: Milan
       in_region: false
-      geo: false
+      geo: true
       global: true
     - region: eu-south-2
       location: Spain
       in_region: false
-      geo: false
+      geo: true
       global: true
     - region: eu-west-1
       location: Ireland
       in_region: false
-      geo: false
+      geo: true
       global: true
     - region: eu-west-2
       location: London
       in_region: false
-      geo: false
+      geo: true
       global: true
     - region: eu-west-3
       location: Paris
       in_region: false
-      geo: false
+      geo: true
       global: true
     - region: ap-southeast-2
       location: Sydney
@@ -1041,7 +1041,7 @@ providers:
       global: true
     - region: eu-west-2
       location: London
-      in_region: false
+      in_region: true
       geo: true
       global: true
     - region: eu-west-3
@@ -1595,7 +1595,7 @@ providers:
       global: true
     - region: ap-northeast-2
       location: Seoul
-      in_region: false
+      in_region: true
       geo: false
       global: true
     - region: ap-northeast-3
@@ -1606,12 +1606,12 @@ providers:
     - region: ap-south-1
       location: Mumbai
       in_region: false
-      geo: false
+      geo: true
       global: true
     - region: ap-south-2
       location: Hyderabad
       in_region: false
-      geo: false
+      geo: true
       global: true
     - region: ap-southeast-1
       location: Singapore
@@ -1743,7 +1743,7 @@ providers:
       global: true
     - region: eu-west-2
       location: London
-      in_region: false
+      in_region: true
       geo: true
       global: true
     - region: eu-west-3
@@ -1763,7 +1763,7 @@ providers:
       global: true
     - region: ap-northeast-2
       location: Seoul
-      in_region: false
+      in_region: true
       geo: false
       global: true
     - region: ap-northeast-3
@@ -1774,16 +1774,16 @@ providers:
     - region: ap-south-1
       location: Mumbai
       in_region: false
-      geo: false
+      geo: true
       global: true
     - region: ap-south-2
       location: Hyderabad
       in_region: false
-      geo: false
+      geo: true
       global: true
     - region: ap-southeast-1
       location: Singapore
-      in_region: false
+      in_region: true
       geo: false
       global: true
     - region: ap-southeast-2
@@ -3113,12 +3113,12 @@ providers:
     - region: ap-south-1
       location: Mumbai
       in_region: false
-      geo: false
+      geo: true
       global: true
     - region: ap-south-2
       location: Hyderabad
       in_region: false
-      geo: false
+      geo: true
       global: true
     - region: ap-southeast-1
       location: Singapore
@@ -5902,11 +5902,25 @@ providers:
       global: false
     model_card: model-card-nvidia-nemotron-super-3-120b.html
   OpenAI:
+  - name: GPT-6.1 Sol
+    regions:
+    - endpoint: bedrock-mantle
+      region: us-east-1
+      location: N. Virginia
+      in_region: true
+      geo: false
+      global: false
+    - endpoint: bedrock-runtime
+      scope: US geographic and global inference
+      in_region: false
+      geo: true
+      global: true
+    model_card: model-card-openai-gpt-6-1-sol.html
   - name: GPT-6 Astra
     regions:
     - region: us-east-1
       location: N. Virginia
-      in_region: false
+      in_region: true
       geo: true
       global: true
     - region: us-east-2

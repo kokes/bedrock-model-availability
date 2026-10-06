@@ -19,7 +19,10 @@ DEFAULT_URL = (
 )
 PROVIDER_HEADING_PREFIX = "model-regions-"
 INFERENCE_COLUMNS = ("in_region", "geo", "global")
-FIRST_COLUMN_HEADERS = frozenset({"region", "endpoint and scope"})
+FIRST_COLUMN_HEADERS = frozenset(
+    {"region", "endpoint and scope", "endpoint and source regions"}
+)
+ENDPOINT_STYLE_HEADERS = frozenset({"endpoint and scope", "endpoint and source regions"})
 
 
 def fetch_page(url: str, timeout: float = 60.0) -> bytes:
@@ -108,7 +111,7 @@ def parse_model_table(table) -> dict:
     if len(columns) != 4 or columns[0] not in FIRST_COLUMN_HEADERS:
         raise ValueError(f"unexpected table columns: {columns}")
 
-    endpoint_style = columns[0] == "endpoint and scope"
+    endpoint_style = columns[0] in ENDPOINT_STYLE_HEADERS
     regions: list[dict] = []
     for row in table.xpath(".//tr[td]"):
         cells = row.xpath("./td")

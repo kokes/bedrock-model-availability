@@ -18,11 +18,44 @@ DEFAULT_URL = (
     "models-region-compatibility.html"
 )
 PROVIDER_HEADING_PREFIX = "model-regions-"
-INFERENCE_COLUMNS = ("in_region", "geo", "global")
 FIRST_COLUMN_HEADERS = frozenset(
     {"region", "endpoint and scope", "endpoint and source regions"}
 )
 ENDPOINT_STYLE_HEADERS = frozenset({"endpoint and scope", "endpoint and source regions"})
+DIFF_INFERENCE_FIELDS = ("in_region_mantle", "in_region", "geo", "global")
+
+
+def normalize_inference_header(header: str) -> str:
+    column = header.strip().lower()
+    if column == "in-region":
+        return "in_region"
+    if column == "geo":
+        return "geo"
+    if column == "global":
+        return "global"
+    if column.startswith("in-region (bedrock-mantle"):
+        return "in_region_mantle"
+    if column.startswith("in-region (bedrock-runtime"):
+        return "in_region"
+    if column.startswith("geo (bedrock-runtime"):
+        return "geo"
+    if column.startswith("global (bedrock-runtime"):
+        return "global"
+    raise ValueError(f"unknown inference column: {header!r}")
+
+
+def parse_inference_columns(headers: list[str]) -> list[str]:
+    if not headers or headers[0] not in FIRST_COLUMN_HEADERS:
+        raise ValueError(f"unexpected table columns: {headers}")
+
+    inference_headers = headers[1:]
+    if not inference_headers:
+        raise ValueError(f"unexpected table columns: {headers}")
+
+    try:
+        return [normalize_inference_header(header) for header in inference_headers]
+    except ValueError as exc:
+        raise ValueError(f"unexpected table columns: {headers}") from exc
 
 
 def fetch_page(url: str, timeout: float = 60.0) -> bytes:
@@ -108,21 +141,21 @@ def parse_model_table(table) -> dict:
 
     header_cells = table.xpath(".//thead//th")
     columns = [cell.text_content().strip().lower() for cell in header_cells]
-    if len(columns) != 4 or columns[0] not in FIRST_COLUMN_HEADERS:
-        raise ValueError(f"unexpected table columns: {columns}")
+    inference_columns = parse_inference_columns(columns)
+    expected_cells = 1 + len(inference_columns)
 
     endpoint_style = columns[0] in ENDPOINT_STYLE_HEADERS
     regions: list[dict] = []
     for row in table.xpath(".//tr[td]"):
         cells = row.xpath("./td")
-        if len(cells) != 4:
+        if len(cells) != expected_cells:
             continue
 
         if endpoint_style:
             entry = parse_endpoint_scope(cells[0])
         else:
             entry = parse_region(cells[0])
-        for column_name, cell in zip(INFERENCE_COLUMNS, cells[1:]):
+        for column_name, cell in zip(inference_columns, cells[1:]):
             entry[column_name] = parse_availability(cell)
         regions.append(entry)
 
@@ -225,7 +258,12 @@ def diff_regions(old_model: dict, new_model: dict) -> list[str]:
     for region in sorted(set(old_regions) & set(new_regions)):
         old_entry = old_regions[region]
         new_entry = new_regions[region]
-        for field in ("endpoint", "scope", "location", "in_region", "geo", "global"):
+        for field in (
+            "endpoint",
+            "scope",
+            "location",
+            *DIFF_INFERENCE_FIELDS,
+        ):
             old_value = old_entry.get(field)
             new_value = new_entry.get(field)
             if old_value != new_value:

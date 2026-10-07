@@ -182,7 +182,7 @@ providers:
       geo: false
       global: false
     - region: us-gov-west-1
-      location: GovCloud
+      location: AWS GovCloud (US-West)
       in_region: true
       geo: false
       global: false
@@ -218,12 +218,12 @@ providers:
       geo: false
       global: false
     - region: us-gov-east-1
-      location: GovCloud
+      location: AWS GovCloud (US-East)
       in_region: true
       geo: false
       global: false
     - region: us-gov-west-1
-      location: GovCloud
+      location: AWS GovCloud (US-West)
       in_region: true
       geo: false
       global: false
@@ -468,7 +468,7 @@ providers:
       geo: true
       global: false
     - region: us-gov-west-1
-      location: GovCloud
+      location: AWS GovCloud (US-West)
       in_region: true
       geo: false
       global: false
@@ -535,7 +535,7 @@ providers:
     - region: ap-southeast-3
       location: Jakarta
       in_region: true
-      geo: false
+      geo: true
       global: false
     - region: il-central-1
       location: Tel Aviv
@@ -589,7 +589,7 @@ providers:
       geo: true
       global: false
     - region: us-gov-west-1
-      location: GovCloud
+      location: AWS GovCloud (US-West)
       in_region: true
       geo: false
       global: false
@@ -661,7 +661,7 @@ providers:
     - region: ap-southeast-3
       location: Jakarta
       in_region: true
-      geo: false
+      geo: true
       global: false
     - region: il-central-1
       location: Tel Aviv
@@ -710,7 +710,7 @@ providers:
       geo: true
       global: false
     - region: us-gov-west-1
-      location: GovCloud
+      location: AWS GovCloud (US-West)
       in_region: true
       geo: false
       global: false
@@ -785,176 +785,211 @@ providers:
     regions:
     - region: us-east-1
       location: N. Virginia
+      in_region_mantle: false
       in_region: false
       geo: true
       global: true
     - region: us-east-2
       location: Ohio
+      in_region_mantle: false
       in_region: false
       geo: true
       global: true
     - region: us-west-1
       location: N. California
+      in_region_mantle: false
       in_region: false
       geo: true
       global: true
     - region: us-west-2
       location: Oregon
+      in_region_mantle: false
       in_region: false
       geo: true
       global: true
     - region: ca-central-1
       location: Canada
+      in_region_mantle: false
       in_region: false
       geo: true
       global: true
     - region: ca-west-1
       location: Calgary
+      in_region_mantle: false
       in_region: false
       geo: true
       global: true
     - region: eu-central-1
       location: Frankfurt
+      in_region_mantle: false
       in_region: false
       geo: true
       global: true
     - region: eu-central-2
       location: Zurich
+      in_region_mantle: false
       in_region: false
       geo: true
       global: true
     - region: eu-north-1
       location: Stockholm
+      in_region_mantle: false
       in_region: false
       geo: true
       global: true
     - region: eu-south-1
       location: Milan
+      in_region_mantle: false
       in_region: false
       geo: true
       global: true
     - region: eu-south-2
       location: Spain
+      in_region_mantle: false
       in_region: false
       geo: true
       global: true
     - region: eu-west-1
       location: Ireland
+      in_region_mantle: false
       in_region: false
       geo: true
       global: true
     - region: eu-west-2
       location: London
+      in_region_mantle: false
       in_region: false
       geo: true
       global: true
     - region: eu-west-3
       location: Paris
+      in_region_mantle: false
       in_region: false
       geo: true
       global: true
     - region: ap-southeast-2
       location: Sydney
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: ap-southeast-4
       location: Melbourne
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: ap-east-2
       location: Taipei
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: ap-northeast-1
       location: Tokyo
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: ap-northeast-2
       location: Seoul
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: ap-northeast-3
       location: Osaka
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: ap-south-1
       location: Mumbai
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: ap-south-2
       location: Hyderabad
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: ap-southeast-1
       location: Singapore
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: ap-southeast-3
       location: Jakarta
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: ap-southeast-5
       location: Malaysia
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: ap-southeast-6
       location: New Zealand
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: ap-southeast-7
       location: Thailand
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: il-central-1
       location: Tel Aviv
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: me-central-1
       location: UAE
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: me-south-1
       location: Bahrain
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: af-south-1
       location: Cape Town
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: sa-east-1
       location: São Paulo
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: mx-central-1
       location: Mexico
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: us-gov-west-1
-      location: GovCloud West
-      in_region: true
+      location: AWS GovCloud (US-West)
+      in_region_mantle: true
+      in_region: false
       geo: true
       global: false
     - region: us-gov-east-1
-      location: GovCloud East
+      location: AWS GovCloud (US-East)
+      in_region_mantle: false
       in_region: false
       geo: true
       global: false
@@ -963,176 +998,211 @@ providers:
     regions:
     - region: us-east-1
       location: N. Virginia
-      in_region: true
+      in_region_mantle: true
+      in_region: false
       geo: true
       global: true
     - region: us-east-2
       location: Ohio
+      in_region_mantle: false
       in_region: false
       geo: true
       global: true
     - region: us-west-1
       location: N. California
+      in_region_mantle: false
       in_region: false
       geo: true
       global: true
     - region: us-west-2
       location: Oregon
+      in_region_mantle: false
       in_region: false
       geo: true
       global: true
     - region: ca-central-1
       location: Canada
+      in_region_mantle: false
       in_region: false
       geo: true
       global: true
     - region: ca-west-1
       location: Calgary
+      in_region_mantle: false
       in_region: false
       geo: true
       global: true
     - region: eu-central-1
       location: Frankfurt
+      in_region_mantle: false
       in_region: false
       geo: true
       global: true
     - region: eu-central-2
       location: Zurich
+      in_region_mantle: false
       in_region: false
       geo: true
       global: true
     - region: eu-north-1
       location: Stockholm
+      in_region_mantle: false
       in_region: false
       geo: true
       global: true
     - region: eu-south-1
       location: Milan
+      in_region_mantle: false
       in_region: false
       geo: true
       global: true
     - region: eu-south-2
       location: Spain
+      in_region_mantle: false
       in_region: false
       geo: true
       global: true
     - region: eu-west-1
       location: Ireland
+      in_region_mantle: false
       in_region: false
       geo: true
       global: true
     - region: eu-west-2
       location: London
+      in_region_mantle: false
       in_region: true
       geo: true
       global: true
     - region: eu-west-3
       location: Paris
+      in_region_mantle: false
       in_region: false
       geo: true
       global: true
     - region: ap-southeast-2
       location: Sydney
+      in_region_mantle: false
       in_region: false
       geo: true
       global: true
     - region: ap-southeast-4
       location: Melbourne
-      in_region: true
+      in_region_mantle: true
+      in_region: false
       geo: true
       global: true
     - region: ap-east-2
       location: Taipei
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: ap-northeast-1
       location: Tokyo
+      in_region_mantle: false
       in_region: false
       geo: true
       global: true
     - region: ap-northeast-2
       location: Seoul
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: ap-northeast-3
       location: Osaka
+      in_region_mantle: false
       in_region: false
       geo: true
       global: true
     - region: ap-south-1
       location: Mumbai
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: ap-south-2
       location: Hyderabad
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: ap-southeast-1
       location: Singapore
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: ap-southeast-3
       location: Jakarta
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: ap-southeast-5
       location: Malaysia
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: ap-southeast-6
       location: New Zealand
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: ap-southeast-7
       location: Thailand
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: il-central-1
       location: Tel Aviv
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: me-central-1
       location: UAE
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: me-south-1
       location: Bahrain
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: af-south-1
       location: Cape Town
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: sa-east-1
       location: São Paulo
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: mx-central-1
       location: Mexico
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: us-gov-west-1
-      location: GovCloud West
-      in_region: true
+      location: AWS GovCloud (US-West)
+      in_region_mantle: true
+      in_region: false
       geo: true
       global: false
     - region: us-gov-east-1
-      location: GovCloud East
+      location: AWS GovCloud (US-East)
+      in_region_mantle: false
       in_region: false
       geo: true
       global: false
@@ -1141,177 +1211,212 @@ providers:
     regions:
     - region: us-east-1
       location: N. Virginia
+      in_region_mantle: false
       in_region: false
       geo: true
       global: true
     - region: us-east-2
       location: Ohio
+      in_region_mantle: false
       in_region: false
       geo: true
       global: true
     - region: us-west-1
       location: N. California
+      in_region_mantle: false
       in_region: false
       geo: true
       global: true
     - region: us-west-2
       location: Oregon
+      in_region_mantle: false
       in_region: false
       geo: true
       global: true
     - region: ca-central-1
       location: Canada
+      in_region_mantle: false
       in_region: false
       geo: true
       global: true
     - region: ca-west-1
       location: Calgary
+      in_region_mantle: false
       in_region: false
       geo: true
       global: true
     - region: eu-central-1
       location: Frankfurt
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: eu-central-2
       location: Zurich
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: eu-north-1
       location: Stockholm
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: eu-south-1
       location: Milan
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: eu-south-2
       location: Spain
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: eu-west-1
       location: Ireland
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: eu-west-2
       location: London
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: eu-west-3
       location: Paris
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: ap-east-2
       location: Taipei
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: ap-northeast-1
       location: Tokyo
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: ap-northeast-2
       location: Seoul
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: ap-northeast-3
       location: Osaka
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: ap-south-1
       location: Mumbai
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: ap-south-2
       location: Hyderabad
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: ap-southeast-1
       location: Singapore
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: ap-southeast-2
       location: Sydney
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: ap-southeast-3
       location: Jakarta
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: ap-southeast-4
       location: Melbourne
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: ap-southeast-5
       location: Malaysia
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: ap-southeast-6
       location: New Zealand
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: ap-southeast-7
       location: Thailand
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: il-central-1
       location: Tel Aviv
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: me-central-1
       location: UAE
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: me-south-1
       location: Bahrain
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: af-south-1
       location: Cape Town
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: sa-east-1
       location: São Paulo
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: mx-central-1
       location: Mexico
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: us-gov-east-1
-      location: GovCloud East
+      location: AWS GovCloud (US-East)
+      in_region_mantle: false
       in_region: false
       geo: true
       global: false
     - region: us-gov-west-1
-      location: GovCloud West
-      in_region: true
+      location: AWS GovCloud (US-West)
+      in_region_mantle: true
+      in_region: false
       geo: true
       global: false
     model_card: model-card-anthropic-claude-fable-5-1.html
@@ -1487,176 +1592,211 @@ providers:
     regions:
     - region: us-east-1
       location: N. Virginia
-      in_region: true
+      in_region_mantle: true
+      in_region: false
       geo: true
       global: true
     - region: us-east-2
       location: Ohio
+      in_region_mantle: false
       in_region: false
       geo: true
       global: true
     - region: us-west-1
       location: N. California
+      in_region_mantle: false
       in_region: false
       geo: true
       global: true
     - region: us-west-2
       location: Oregon
+      in_region_mantle: false
       in_region: false
       geo: true
       global: true
     - region: ca-central-1
       location: Canada
+      in_region_mantle: false
       in_region: false
       geo: true
       global: true
     - region: ca-west-1
       location: Calgary
+      in_region_mantle: false
       in_region: false
       geo: true
       global: true
     - region: eu-central-1
       location: Frankfurt
+      in_region_mantle: false
       in_region: false
       geo: true
       global: true
     - region: eu-central-2
       location: Zurich
+      in_region_mantle: false
       in_region: false
       geo: true
       global: true
     - region: eu-north-1
       location: Stockholm
-      in_region: true
+      in_region_mantle: true
+      in_region: false
       geo: true
       global: true
     - region: eu-south-1
       location: Milan
+      in_region_mantle: false
       in_region: false
       geo: true
       global: true
     - region: eu-south-2
       location: Spain
+      in_region_mantle: false
       in_region: false
       geo: true
       global: true
     - region: eu-west-1
       location: Ireland
-      in_region: true
+      in_region_mantle: true
+      in_region: false
       geo: true
       global: true
     - region: eu-west-2
       location: London
+      in_region_mantle: false
       in_region: false
       geo: true
       global: true
     - region: eu-west-3
       location: Paris
+      in_region_mantle: false
       in_region: false
       geo: true
       global: true
     - region: ap-southeast-2
       location: Sydney
+      in_region_mantle: false
       in_region: false
       geo: true
       global: true
     - region: ap-southeast-4
       location: Melbourne
-      in_region: true
+      in_region_mantle: true
+      in_region: false
       geo: true
       global: true
     - region: ap-east-2
       location: Taipei
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: ap-northeast-1
       location: Tokyo
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: ap-northeast-2
       location: Seoul
+      in_region_mantle: true
       in_region: true
       geo: false
       global: true
     - region: ap-northeast-3
       location: Osaka
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: ap-south-1
       location: Mumbai
+      in_region_mantle: true
       in_region: false
       geo: true
       global: true
     - region: ap-south-2
       location: Hyderabad
+      in_region_mantle: false
       in_region: false
       geo: true
       global: true
     - region: ap-southeast-1
       location: Singapore
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: ap-southeast-3
       location: Jakarta
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: ap-southeast-5
       location: Malaysia
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: ap-southeast-6
       location: New Zealand
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: ap-southeast-7
       location: Thailand
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: il-central-1
       location: Tel Aviv
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: me-central-1
       location: UAE
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: me-south-1
       location: Bahrain
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: af-south-1
       location: Cape Town
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: sa-east-1
       location: São Paulo
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: mx-central-1
       location: Mexico
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: us-gov-west-1
-      location: GovCloud West
-      in_region: true
+      location: AWS GovCloud (US-West)
+      in_region_mantle: true
+      in_region: false
       geo: true
       global: false
     - region: us-gov-east-1
-      location: GovCloud East
+      location: AWS GovCloud (US-East)
+      in_region_mantle: false
       in_region: false
       geo: true
       global: false
@@ -1665,352 +1805,415 @@ providers:
     regions:
     - region: us-east-1
       location: N. Virginia
-      in_region: true
+      in_region_mantle: true
+      in_region: false
       geo: true
       global: true
     - region: us-east-2
       location: Ohio
+      in_region_mantle: false
       in_region: false
       geo: true
       global: true
     - region: us-west-1
       location: N. California
+      in_region_mantle: false
       in_region: false
       geo: true
       global: true
     - region: us-west-2
       location: Oregon
+      in_region_mantle: false
       in_region: false
       geo: true
       global: true
     - region: ca-central-1
       location: Canada
+      in_region_mantle: false
       in_region: false
       geo: true
       global: true
     - region: ca-west-1
       location: Calgary
+      in_region_mantle: false
       in_region: false
       geo: true
       global: true
     - region: eu-central-1
       location: Frankfurt
+      in_region_mantle: false
       in_region: false
       geo: true
       global: true
     - region: eu-central-2
       location: Zurich
+      in_region_mantle: false
       in_region: false
       geo: true
       global: true
     - region: eu-north-1
       location: Stockholm
-      in_region: true
+      in_region_mantle: true
+      in_region: false
       geo: true
       global: true
     - region: eu-south-1
       location: Milan
+      in_region_mantle: false
       in_region: false
       geo: true
       global: true
     - region: eu-south-2
       location: Spain
+      in_region_mantle: false
       in_region: false
       geo: true
       global: true
     - region: eu-west-1
       location: Ireland
-      in_region: true
+      in_region_mantle: true
+      in_region: false
       geo: true
       global: true
     - region: eu-west-2
       location: London
+      in_region_mantle: false
       in_region: true
       geo: true
       global: true
     - region: eu-west-3
       location: Paris
+      in_region_mantle: false
       in_region: false
       geo: true
       global: true
     - region: ap-east-2
       location: Taipei
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: ap-northeast-1
       location: Tokyo
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: ap-northeast-2
       location: Seoul
+      in_region_mantle: true
       in_region: true
       geo: false
       global: true
     - region: ap-northeast-3
       location: Osaka
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: ap-south-1
       location: Mumbai
+      in_region_mantle: true
       in_region: false
       geo: true
       global: true
     - region: ap-south-2
       location: Hyderabad
+      in_region_mantle: false
       in_region: false
       geo: true
       global: true
     - region: ap-southeast-1
       location: Singapore
+      in_region_mantle: true
       in_region: true
       geo: false
       global: true
     - region: ap-southeast-2
       location: Sydney
+      in_region_mantle: false
       in_region: false
-      geo: false
+      geo: true
       global: true
     - region: ap-southeast-3
       location: Jakarta
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: ap-southeast-4
       location: Melbourne
-      in_region: true
+      in_region_mantle: true
+      in_region: false
       geo: true
       global: true
     - region: ap-southeast-5
       location: Malaysia
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: ap-southeast-6
       location: New Zealand
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: ap-southeast-7
       location: Thailand
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: il-central-1
       location: Tel Aviv
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: me-central-1
       location: UAE
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: me-south-1
       location: Bahrain
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: af-south-1
       location: Cape Town
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: sa-east-1
       location: São Paulo
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: mx-central-1
       location: Mexico
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: us-gov-west-1
-      location: GovCloud West
-      in_region: true
+      location: AWS GovCloud (US-West)
+      in_region_mantle: true
+      in_region: false
       geo: true
       global: false
     - region: us-gov-east-1
-      location: GovCloud East
+      location: AWS GovCloud (US-East)
+      in_region_mantle: false
       in_region: false
       geo: true
       global: false
     model_card: model-card-anthropic-claude-sonnet-5.html
   - name: Claude Mythos 5
-    regions:
-    - region: us-east-1
-      location: N. Virginia
-      in_region: true
-      geo: false
-      global: false
+    regions: []
     model_card: model-card-anthropic-claude-mythos-5.html
   - name: Claude Fable 5
     regions:
     - region: us-east-1
       location: N. Virginia
-      in_region: true
+      in_region_mantle: true
+      in_region: false
       geo: true
       global: true
     - region: us-east-2
       location: Ohio
+      in_region_mantle: false
       in_region: false
       geo: true
       global: true
     - region: us-west-1
       location: N. California
+      in_region_mantle: false
       in_region: false
       geo: true
       global: true
     - region: us-west-2
       location: Oregon
+      in_region_mantle: false
       in_region: false
       geo: true
       global: true
     - region: ca-central-1
       location: Canada
+      in_region_mantle: false
       in_region: false
       geo: true
       global: true
     - region: ca-west-1
       location: Calgary
+      in_region_mantle: false
       in_region: false
       geo: true
       global: true
     - region: eu-central-1
       location: Frankfurt
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: eu-central-2
       location: Zurich
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: eu-north-1
       location: Stockholm
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: eu-south-1
       location: Milan
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: eu-south-2
       location: Spain
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: eu-west-1
       location: Ireland
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: eu-west-2
       location: London
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: eu-west-3
       location: Paris
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: ap-east-2
       location: Taipei
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: ap-northeast-1
       location: Tokyo
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: ap-northeast-2
       location: Seoul
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: ap-northeast-3
       location: Osaka
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: ap-south-1
       location: Mumbai
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: ap-south-2
       location: Hyderabad
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: ap-southeast-1
       location: Singapore
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: ap-southeast-2
       location: Sydney
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: ap-southeast-3
       location: Jakarta
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: ap-southeast-4
       location: Melbourne
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: ap-southeast-5
       location: Malaysia
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: ap-southeast-6
       location: New Zealand
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: ap-southeast-7
       location: Thailand
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: il-central-1
       location: Tel Aviv
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: me-central-1
       location: UAE
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: me-south-1
       location: Bahrain
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: af-south-1
       location: Cape Town
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: sa-east-1
       location: São Paulo
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: mx-central-1
       location: Mexico
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
@@ -2020,136 +2223,119 @@ providers:
     - region: us-east-1
       location: N. Virginia
       in_region: false
-      geo: 'Legacy (EOL: 2026-10-14)'
-      global: 'Legacy (EOL: 2026-10-14)'
+      geo: 'EOL: 2026-10-14'
+      global: 'EOL: 2026-10-14'
     - region: us-east-2
       location: Ohio
       in_region: false
-      geo: 'Legacy (EOL: 2026-10-14)'
-      global: 'Legacy (EOL: 2026-10-14)'
+      geo: 'EOL: 2026-10-14'
+      global: 'EOL: 2026-10-14'
     - region: us-west-1
       location: N. California
       in_region: false
-      geo: 'Legacy (EOL: 2026-10-14)'
+      geo: 'EOL: 2026-10-14'
       global: false
     - region: us-west-2
       location: Oregon
       in_region: false
-      geo: 'Legacy (EOL: 2026-10-14)'
-      global: 'Legacy (EOL: 2026-10-14)'
+      geo: 'EOL: 2026-10-14'
+      global: 'EOL: 2026-10-14'
     - region: eu-central-1
       location: Frankfurt
       in_region: false
-      geo: 'Legacy (EOL: 2026-10-14)'
+      geo: 'EOL: 2026-10-14'
       global: false
     - region: eu-north-1
       location: Stockholm
       in_region: false
-      geo: 'Legacy (EOL: 2026-10-14)'
+      geo: 'EOL: 2026-10-14'
       global: false
     - region: eu-south-1
       location: Milan
       in_region: false
-      geo: 'Legacy (EOL: 2026-10-14)'
+      geo: 'EOL: 2026-10-14'
       global: false
     - region: eu-south-2
       location: Spain
       in_region: false
-      geo: 'Legacy (EOL: 2026-10-14)'
+      geo: 'EOL: 2026-10-14'
       global: false
     - region: eu-west-1
       location: Ireland
       in_region: false
-      geo: 'Legacy (EOL: 2026-10-14)'
-      global: 'Legacy (EOL: 2026-10-14)'
+      geo: 'EOL: 2026-10-14'
+      global: 'EOL: 2026-10-14'
     - region: eu-west-3
       location: Paris
       in_region: false
-      geo: 'Legacy (EOL: 2026-10-14)'
+      geo: 'EOL: 2026-10-14'
       global: false
     - region: il-central-1
       location: Tel Aviv
       in_region: false
-      geo: 'Legacy (EOL: 2026-10-14)'
+      geo: 'EOL: 2026-10-14'
       global: false
     - region: ap-east-2
       location: Taipei
       in_region: false
-      geo: 'Legacy (EOL: 2026-10-14)'
+      geo: 'EOL: 2026-10-14'
       global: false
     - region: ap-northeast-1
       location: Tokyo
       in_region: false
-      geo: 'Legacy (EOL: 2026-10-14)'
-      global: 'Legacy (EOL: 2026-10-14)'
+      geo: 'EOL: 2026-10-14'
+      global: 'EOL: 2026-10-14'
     - region: ap-northeast-2
       location: Seoul
       in_region: false
-      geo: 'Legacy (EOL: 2026-10-14)'
+      geo: 'EOL: 2026-10-14'
       global: false
     - region: ap-northeast-3
       location: Osaka
       in_region: false
-      geo: 'Legacy (EOL: 2026-10-14)'
+      geo: 'EOL: 2026-10-14'
       global: false
     - region: ap-south-1
       location: Mumbai
       in_region: false
-      geo: 'Legacy (EOL: 2026-10-14)'
+      geo: 'EOL: 2026-10-14'
       global: false
     - region: ap-south-2
       location: Hyderabad
       in_region: false
-      geo: 'Legacy (EOL: 2026-10-14)'
+      geo: 'EOL: 2026-10-14'
       global: false
     - region: ap-southeast-1
       location: Singapore
       in_region: false
-      geo: 'Legacy (EOL: 2026-10-14)'
+      geo: 'EOL: 2026-10-14'
       global: false
     - region: ap-southeast-2
       location: Sydney
       in_region: false
-      geo: 'Legacy (EOL: 2026-10-14)'
+      geo: 'EOL: 2026-10-14'
       global: false
     - region: ap-southeast-3
       location: Jakarta
       in_region: false
-      geo: 'Legacy (EOL: 2026-10-14)'
+      geo: 'EOL: 2026-10-14'
       global: false
     - region: ap-southeast-4
       location: Melbourne
       in_region: false
-      geo: 'Legacy (EOL: 2026-10-14)'
+      geo: 'EOL: 2026-10-14'
       global: false
     - region: ap-southeast-5
       location: Malaysia
       in_region: false
-      geo: 'Legacy (EOL: 2026-10-14)'
+      geo: 'EOL: 2026-10-14'
       global: false
     - region: ap-southeast-7
       location: Thailand
       in_region: false
-      geo: 'Legacy (EOL: 2026-10-14)'
+      geo: 'EOL: 2026-10-14'
       global: false
     model_card: model-card-anthropic-claude-sonnet-4.html
-  - name: Claude Opus 4
-    regions:
-    - region: us-east-1
-      location: N. Virginia
-      in_region: false
-      geo: true
-      global: false
-    - region: us-east-2
-      location: Ohio
-      in_region: false
-      geo: true
-      global: false
-    - region: us-west-2
-      location: Oregon
-      in_region: false
-      geo: true
-      global: false
   - name: Claude Sonnet 4.6
     regions:
     - region: us-east-1
@@ -2322,176 +2508,211 @@ providers:
     regions:
     - region: us-east-1
       location: N. Virginia
-      in_region: true
+      in_region_mantle: true
+      in_region: false
       geo: true
       global: true
     - region: us-east-2
       location: Ohio
+      in_region_mantle: false
       in_region: false
       geo: true
       global: true
     - region: us-west-1
       location: N. California
+      in_region_mantle: false
       in_region: false
       geo: true
       global: true
     - region: us-west-2
       location: Oregon
+      in_region_mantle: false
       in_region: false
       geo: true
       global: true
     - region: ca-central-1
       location: Canada
+      in_region_mantle: false
       in_region: false
       geo: true
       global: true
     - region: ca-west-1
       location: Calgary
+      in_region_mantle: false
       in_region: false
       geo: true
       global: true
     - region: us-gov-west-1
-      location: GovCloud West
-      in_region: true
+      location: AWS GovCloud (US-West)
+      in_region_mantle: true
+      in_region: false
       geo: true
       global: false
     - region: us-gov-east-1
-      location: GovCloud East
+      location: AWS GovCloud (US-East)
+      in_region_mantle: false
       in_region: false
       geo: true
       global: false
     - region: eu-central-1
       location: Frankfurt
+      in_region_mantle: false
       in_region: false
       geo: true
       global: true
     - region: eu-central-2
       location: Zurich
+      in_region_mantle: false
       in_region: false
       geo: true
       global: true
     - region: eu-north-1
       location: Stockholm
-      in_region: true
+      in_region_mantle: true
+      in_region: false
       geo: true
       global: true
     - region: eu-south-1
       location: Milan
+      in_region_mantle: false
       in_region: false
       geo: true
       global: true
     - region: eu-south-2
       location: Spain
+      in_region_mantle: false
       in_region: false
       geo: true
       global: true
     - region: eu-west-1
       location: Ireland
-      in_region: true
+      in_region_mantle: true
+      in_region: false
       geo: true
       global: true
     - region: eu-west-2
       location: London
+      in_region_mantle: false
       in_region: false
       geo: true
       global: true
     - region: eu-west-3
       location: Paris
+      in_region_mantle: false
       in_region: false
       geo: true
       global: true
     - region: ap-east-2
       location: Taipei
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: ap-northeast-1
       location: Tokyo
-      in_region: true
+      in_region_mantle: true
+      in_region: false
       geo: true
       global: true
     - region: ap-northeast-2
       location: Seoul
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: ap-northeast-3
       location: Osaka
+      in_region_mantle: false
       in_region: false
       geo: true
       global: true
     - region: ap-south-1
       location: Mumbai
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: ap-south-2
       location: Hyderabad
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: ap-southeast-1
       location: Singapore
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: ap-southeast-2
       location: Sydney
+      in_region_mantle: false
       in_region: false
       geo: true
       global: true
     - region: ap-southeast-3
       location: Jakarta
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: ap-southeast-4
       location: Melbourne
-      in_region: true
+      in_region_mantle: true
+      in_region: false
       geo: true
       global: true
     - region: ap-southeast-5
       location: Malaysia
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: ap-southeast-6
       location: New Zealand
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: ap-southeast-7
       location: Thailand
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: il-central-1
       location: Tel Aviv
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: me-central-1
       location: UAE
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: me-south-1
       location: Bahrain
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: af-south-1
       location: Cape Town
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: sa-east-1
       location: São Paulo
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: mx-central-1
       location: Mexico
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
@@ -2500,166 +2721,199 @@ providers:
     regions:
     - region: us-east-1
       location: N. Virginia
-      in_region: true
+      in_region_mantle: true
+      in_region: false
       geo: true
       global: true
     - region: us-east-2
       location: Ohio
+      in_region_mantle: false
       in_region: false
       geo: true
       global: true
     - region: us-west-1
       location: N. California
+      in_region_mantle: false
       in_region: false
       geo: true
       global: true
     - region: us-west-2
       location: Oregon
+      in_region_mantle: false
       in_region: false
       geo: true
       global: true
     - region: ca-central-1
       location: Canada
+      in_region_mantle: false
       in_region: false
       geo: true
       global: true
     - region: ca-west-1
       location: Calgary
+      in_region_mantle: false
       in_region: false
       geo: true
       global: true
     - region: eu-central-1
       location: Frankfurt
+      in_region_mantle: false
       in_region: false
       geo: true
       global: true
     - region: eu-central-2
       location: Zurich
+      in_region_mantle: false
       in_region: false
       geo: true
       global: true
     - region: eu-north-1
       location: Stockholm
-      in_region: true
+      in_region_mantle: true
+      in_region: false
       geo: true
       global: true
     - region: eu-south-1
       location: Milan
+      in_region_mantle: false
       in_region: false
       geo: true
       global: true
     - region: eu-south-2
       location: Spain
+      in_region_mantle: false
       in_region: false
       geo: true
       global: true
     - region: eu-west-1
       location: Ireland
-      in_region: true
+      in_region_mantle: true
+      in_region: false
       geo: true
       global: true
     - region: eu-west-2
       location: London
+      in_region_mantle: false
       in_region: false
       geo: true
       global: true
     - region: eu-west-3
       location: Paris
+      in_region_mantle: false
       in_region: false
       geo: true
       global: true
     - region: ap-east-2
       location: Taipei
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: ap-northeast-1
       location: Tokyo
+      in_region_mantle: true
       in_region: false
       geo: true
       global: true
     - region: ap-northeast-2
       location: Seoul
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: ap-northeast-3
       location: Osaka
+      in_region_mantle: false
       in_region: false
       geo: true
       global: true
     - region: ap-south-1
       location: Mumbai
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: ap-south-2
       location: Hyderabad
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: ap-southeast-1
       location: Singapore
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: ap-southeast-2
       location: Sydney
+      in_region_mantle: false
       in_region: false
       geo: true
       global: true
     - region: ap-southeast-3
       location: Jakarta
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: ap-southeast-4
       location: Melbourne
-      in_region: true
+      in_region_mantle: true
+      in_region: false
       geo: true
       global: true
     - region: ap-southeast-5
       location: Malaysia
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: ap-southeast-6
       location: New Zealand
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: ap-southeast-7
       location: Thailand
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: il-central-1
       location: Tel Aviv
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: me-central-1
       location: UAE
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: me-south-1
       location: Bahrain
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: af-south-1
       location: Cape Town
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: sa-east-1
       location: São Paulo
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: mx-central-1
       location: Mexico
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
@@ -3004,166 +3258,199 @@ providers:
     regions:
     - region: us-east-1
       location: N. Virginia
-      in_region: true
+      in_region_mantle: true
+      in_region: false
       geo: true
       global: true
     - region: us-east-2
       location: Ohio
+      in_region_mantle: true
       in_region: false
       geo: true
       global: true
     - region: us-west-1
       location: N. California
+      in_region_mantle: false
       in_region: false
       geo: true
       global: true
     - region: us-west-2
       location: Oregon
+      in_region_mantle: true
       in_region: false
       geo: true
       global: true
     - region: ca-central-1
       location: Canada
+      in_region_mantle: false
       in_region: false
       geo: true
       global: true
     - region: ca-west-1
       location: Calgary
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: eu-central-1
       location: Frankfurt
+      in_region_mantle: false
       in_region: false
       geo: true
       global: true
     - region: eu-central-2
       location: Zurich
+      in_region_mantle: false
       in_region: false
       geo: true
       global: true
     - region: eu-north-1
       location: Stockholm
-      in_region: true
+      in_region_mantle: true
+      in_region: false
       geo: true
       global: true
     - region: eu-south-1
       location: Milan
+      in_region_mantle: false
       in_region: false
       geo: true
       global: true
     - region: eu-south-2
       location: Spain
+      in_region_mantle: false
       in_region: false
       geo: true
       global: true
     - region: eu-west-1
       location: Ireland
-      in_region: true
+      in_region_mantle: true
+      in_region: false
       geo: true
       global: true
     - region: eu-west-2
       location: London
+      in_region_mantle: false
       in_region: false
       geo: true
       global: true
     - region: eu-west-3
       location: Paris
+      in_region_mantle: false
       in_region: false
       geo: true
       global: true
     - region: ap-east-2
       location: Taipei
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: ap-northeast-1
       location: Tokyo
-      in_region: true
+      in_region_mantle: true
+      in_region: false
       geo: true
       global: true
     - region: ap-northeast-2
       location: Seoul
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: ap-northeast-3
       location: Osaka
+      in_region_mantle: false
       in_region: false
-      geo: false
+      geo: true
       global: true
     - region: ap-south-1
       location: Mumbai
+      in_region_mantle: false
       in_region: false
       geo: true
       global: true
     - region: ap-south-2
       location: Hyderabad
+      in_region_mantle: false
       in_region: false
       geo: true
       global: true
     - region: ap-southeast-1
       location: Singapore
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: ap-southeast-2
       location: Sydney
+      in_region_mantle: false
       in_region: false
       geo: true
       global: true
     - region: ap-southeast-3
       location: Jakarta
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: ap-southeast-4
       location: Melbourne
-      in_region: true
+      in_region_mantle: true
+      in_region: false
       geo: true
       global: true
     - region: ap-southeast-5
       location: Malaysia
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: ap-southeast-6
       location: New Zealand
+      in_region_mantle: false
       in_region: false
       geo: true
       global: true
     - region: ap-southeast-7
       location: Thailand
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: il-central-1
       location: Tel Aviv
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: me-central-1
       location: UAE
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: me-south-1
       location: Bahrain
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: af-south-1
       location: Cape Town
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: sa-east-1
       location: São Paulo
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: mx-central-1
       location: Mexico
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
@@ -3191,12 +3478,12 @@ providers:
       geo: true
       global: true
     - region: us-gov-east-1
-      location: GovCloud
+      location: AWS GovCloud (US-East)
       in_region: false
       geo: true
       global: false
     - region: us-gov-west-1
-      location: GovCloud
+      location: AWS GovCloud (US-West)
       in_region: false
       geo: true
       global: false
@@ -3268,7 +3555,7 @@ providers:
     - region: ap-northeast-3
       location: Osaka
       in_region: false
-      geo: false
+      geo: true
       global: true
     - region: ap-south-1
       location: Mumbai
@@ -3351,17 +3638,17 @@ providers:
     - region: us-east-1
       location: N. Virginia
       in_region: false
-      geo: 'Legacy (EOL: 2027-01-08)'
+      geo: 'EOL: 2027-01-08'
       global: false
     - region: us-east-2
       location: Ohio
       in_region: false
-      geo: 'Legacy (EOL: 2027-01-08)'
+      geo: 'EOL: 2027-01-08'
       global: false
     - region: us-west-2
       location: Oregon
       in_region: false
-      geo: 'Legacy (EOL: 2027-01-08)'
+      geo: 'EOL: 2027-01-08'
       global: false
     model_card: model-card-anthropic-claude-opus-4-1.html
   - name: Claude 3 Haiku
@@ -3369,7 +3656,7 @@ providers:
     - region: us-east-1
       location: N. Virginia
       in_region: 'EOL: 2026-09-10'
-      geo: true
+      geo: 'EOL: 2026-09-10'
       global: false
     - region: us-east-2
       location: Ohio
@@ -3379,7 +3666,7 @@ providers:
     - region: us-west-2
       location: Oregon
       in_region: 'EOL: 2026-09-10'
-      geo: true
+      geo: 'EOL: 2026-09-10'
       global: false
     - region: us-gov-east-1
       location: GovCloud
@@ -3393,23 +3680,23 @@ providers:
       global: false
     - region: ca-central-1
       location: Canada
-      in_region: true
+      in_region: 'EOL: 2026-09-10'
       geo: false
       global: false
     - region: eu-central-1
       location: Frankfurt
       in_region: 'EOL: 2026-09-10'
-      geo: true
+      geo: 'EOL: 2026-09-10'
       global: false
     - region: eu-central-2
       location: Zurich
-      in_region: true
+      in_region: 'EOL: 2026-09-10'
       geo: false
       global: false
     - region: eu-west-1
       location: Ireland
       in_region: 'EOL: 2026-09-10'
-      geo: true
+      geo: 'EOL: 2026-09-10'
       global: false
     - region: eu-west-2
       location: London
@@ -3419,7 +3706,7 @@ providers:
     - region: eu-west-3
       location: Paris
       in_region: 'EOL: 2026-09-10'
-      geo: true
+      geo: 'EOL: 2026-09-10'
       global: false
     - region: ap-northeast-1
       location: Tokyo
@@ -3428,17 +3715,17 @@ providers:
       global: false
     - region: ap-northeast-2
       location: Seoul
-      in_region: true
+      in_region: 'EOL: 2026-09-10'
       geo: false
       global: false
     - region: ap-south-1
       location: Mumbai
-      in_region: true
+      in_region: 'EOL: 2026-09-10'
       geo: false
       global: false
     - region: ap-southeast-1
       location: Singapore
-      in_region: true
+      in_region: 'EOL: 2026-09-10'
       geo: false
       global: false
     - region: ap-southeast-2
@@ -3448,7 +3735,7 @@ providers:
       global: false
     - region: sa-east-1
       location: São Paulo
-      in_region: true
+      in_region: 'EOL: 2026-09-10'
       geo: false
       global: false
     model_card: model-card-anthropic-claude-3-haiku.html
@@ -3456,198 +3743,198 @@ providers:
     regions:
     - region: us-east-1
       location: N. Virginia
-      in_region: 'Legacy (EOL: 2026-07-30)'
-      geo: 'Legacy (EOL: 2026-07-30)'
+      in_region: 'EOL: 2026-07-30'
+      geo: 'EOL: 2026-07-30'
       global: false
     - region: us-west-2
       location: Oregon
-      in_region: 'Legacy (EOL: 2026-07-30)'
-      geo: 'Legacy (EOL: 2026-07-30)'
+      in_region: 'EOL: 2026-07-30'
+      geo: 'EOL: 2026-07-30'
       global: false
     - region: ca-central-1
       location: Canada
-      in_region: true
+      in_region: 'EOL: 2026-07-30'
       geo: false
       global: false
     - region: eu-central-1
       location: Frankfurt
-      in_region: 'Legacy (EOL: 2026-07-30)'
-      geo: 'Legacy (EOL: 2026-07-30)'
+      in_region: 'EOL: 2026-07-30'
+      geo: 'EOL: 2026-07-30'
       global: false
     - region: eu-west-1
       location: Ireland
       in_region: false
-      geo: 'Legacy (EOL: 2026-07-30)'
+      geo: 'EOL: 2026-07-30'
       global: false
     - region: eu-west-2
       location: London
-      in_region: true
+      in_region: 'EOL: 2026-07-30'
       geo: false
       global: false
     - region: eu-west-3
       location: Paris
       in_region: false
-      geo: 'Legacy (EOL: 2026-07-30)'
+      geo: 'EOL: 2026-07-30'
       global: false
     - region: ap-south-1
       location: Mumbai
-      in_region: true
+      in_region: 'EOL: 2026-07-30'
       geo: false
       global: false
     - region: ap-southeast-1
       location: Singapore
       in_region: false
-      geo: true
+      geo: 'EOL: 2026-07-30'
       global: false
     - region: ap-southeast-2
       location: Sydney
-      in_region: 'Legacy (EOL: 2026-07-30)'
+      in_region: 'EOL: 2026-07-30'
       geo: false
       global: false
     - region: sa-east-1
       location: São Paulo
-      in_region: true
+      in_region: 'EOL: 2026-07-30'
       geo: false
       global: false
   - name: Claude 3.7 Sonnet
     regions:
     - region: us-east-1
       location: N. Virginia
-      in_region: 'Legacy (EOL: 2026-07-30)'
-      geo: 'Legacy (EOL: 2026-07-30)'
+      in_region: 'EOL: 2026-07-30'
+      geo: 'EOL: 2026-07-30'
       global: false
     - region: us-east-2
       location: Ohio
       in_region: false
-      geo: 'Legacy (EOL: 2026-07-30)'
+      geo: 'EOL: 2026-07-30'
       global: false
     - region: us-west-2
       location: Oregon
-      in_region: 'Legacy (EOL: 2026-07-30)'
-      geo: 'Legacy (EOL: 2026-07-30)'
+      in_region: 'EOL: 2026-07-30'
+      geo: 'EOL: 2026-07-30'
       global: false
     - region: eu-central-1
       location: Frankfurt
-      in_region: 'Legacy (EOL: 2026-07-30)'
-      geo: 'Legacy (EOL: 2026-07-30)'
+      in_region: 'EOL: 2026-07-30'
+      geo: 'EOL: 2026-07-30'
       global: false
     - region: eu-north-1
       location: Stockholm
       in_region: false
-      geo: 'Legacy (EOL: 2026-07-30)'
+      geo: 'EOL: 2026-07-30'
       global: false
     - region: eu-west-1
       location: Ireland
       in_region: false
-      geo: 'Legacy (EOL: 2026-07-30)'
+      geo: 'EOL: 2026-07-30'
       global: false
     - region: eu-west-2
       location: London
-      in_region: true
+      in_region: 'EOL: 2026-07-30'
       geo: false
       global: false
     - region: eu-west-3
       location: Paris
       in_region: false
-      geo: 'Legacy (EOL: 2026-07-30)'
+      geo: 'EOL: 2026-07-30'
       global: false
     - region: ap-south-1
       location: Mumbai
       in_region: false
-      geo: true
+      geo: 'EOL: 2026-07-30'
       global: false
   - name: Claude 3.5 Sonnet V2:0
     regions:
     - region: us-east-1
       location: N. Virginia
       in_region: false
-      geo: 'Legacy (EOL: 2026-07-30)'
+      geo: 'EOL: 2026-07-30'
       global: false
     - region: us-east-2
       location: Ohio
       in_region: false
-      geo: 'Legacy (EOL: 2026-07-30)'
+      geo: 'EOL: 2026-07-30'
       global: false
     - region: us-west-2
       location: Oregon
       in_region: false
-      geo: 'Legacy (EOL: 2026-07-30)'
+      geo: 'EOL: 2026-07-30'
       global: false
     - region: ap-northeast-2
       location: Seoul
       in_region: false
-      geo: true
+      geo: 'EOL: 2026-07-30'
       global: false
     - region: ap-south-1
       location: Mumbai
       in_region: false
-      geo: true
+      geo: 'EOL: 2026-07-30'
       global: false
     - region: ap-southeast-1
       location: Singapore
       in_region: false
-      geo: true
+      geo: 'EOL: 2026-07-30'
       global: false
     - region: ap-southeast-2
       location: Sydney
       in_region: false
-      geo: 'Legacy (EOL: 2026-07-30)'
+      geo: 'EOL: 2026-07-30'
       global: false
   - name: Claude 3.5 Sonnet
     regions:
     - region: us-east-1
       location: N. Virginia
-      in_region: 'Legacy (EOL: 2026-07-30)'
-      geo: 'Legacy (EOL: 2026-07-30)'
+      in_region: 'EOL: 2026-07-30'
+      geo: 'EOL: 2026-07-30'
       global: false
     - region: us-east-2
       location: Ohio
       in_region: false
-      geo: 'Legacy (EOL: 2026-07-30)'
+      geo: 'EOL: 2026-07-30'
       global: false
     - region: us-west-2
       location: Oregon
-      in_region: 'Legacy (EOL: 2026-07-30)'
-      geo: 'Legacy (EOL: 2026-07-30)'
+      in_region: 'EOL: 2026-07-30'
+      geo: 'EOL: 2026-07-30'
       global: false
     - region: eu-central-1
       location: Frankfurt
-      in_region: 'Legacy (EOL: 2026-07-30)'
-      geo: 'Legacy (EOL: 2026-07-30)'
+      in_region: 'EOL: 2026-07-30'
+      geo: 'EOL: 2026-07-30'
       global: false
     - region: eu-central-2
       location: Zurich
-      in_region: 'Legacy (EOL: 2026-07-30)'
+      in_region: 'EOL: 2026-07-30'
       geo: false
       global: false
     - region: eu-west-1
       location: Ireland
       in_region: false
-      geo: 'Legacy (EOL: 2026-07-30)'
+      geo: 'EOL: 2026-07-30'
       global: false
     - region: eu-west-3
       location: Paris
       in_region: false
-      geo: 'Legacy (EOL: 2026-07-30)'
+      geo: 'EOL: 2026-07-30'
       global: false
     - region: ap-northeast-1
       location: Tokyo
-      in_region: 'Legacy (EOL: 2026-07-30)'
+      in_region: 'EOL: 2026-07-30'
       geo: false
       global: false
     - region: ap-northeast-2
       location: Seoul
-      in_region: true
+      in_region: 'EOL: 2026-07-30'
       geo: false
       global: false
     - region: ap-south-1
       location: Mumbai
       in_region: false
-      geo: true
+      geo: 'EOL: 2026-07-30'
       global: false
     - region: ap-southeast-1
       location: Singapore
-      in_region: true
+      in_region: 'EOL: 2026-07-30'
       geo: false
       global: false
   Cohere:
@@ -3954,51 +4241,61 @@ providers:
     regions:
     - region: us-east-1
       location: N. Virginia
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: us-east-2
       location: Ohio
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: us-west-2
       location: Oregon
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: eu-north-1
       location: Stockholm
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: eu-west-2
       location: London
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: ap-northeast-1
       location: Tokyo
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: ap-south-1
       location: Mumbai
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: ap-southeast-2
       location: Sydney
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: ap-southeast-3
       location: Jakarta
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: sa-east-1
       location: São Paulo
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
@@ -4007,41 +4304,49 @@ providers:
     regions:
     - region: us-east-2
       location: Ohio
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: us-west-2
       location: Oregon
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: eu-north-1
       location: Stockholm
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: eu-west-2
       location: London
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: ap-northeast-1
       location: Tokyo
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: ap-south-1
       location: Mumbai
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: ap-southeast-2
       location: Sydney
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: ap-southeast-3
       location: Jakarta
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
@@ -4069,27 +4374,32 @@ providers:
     regions:
     - region: us-east-1
       location: N. Virginia
-      in_region: true
+      in_region_mantle: true
+      in_region: false
       geo: false
       global: false
     - region: us-east-2
       location: Ohio
-      in_region: true
+      in_region_mantle: true
+      in_region: false
       geo: false
       global: false
     - region: us-west-2
       location: Oregon
-      in_region: true
+      in_region_mantle: true
+      in_region: false
       geo: false
       global: false
     - region: us-gov-west-1
-      location: GovCloud West
+      location: AWS GovCloud (US-West)
+      in_region_mantle: false
       in_region: true
       geo: false
       global: false
     - region: eu-central-1
       location: Frankfurt
-      in_region: true
+      in_region_mantle: true
+      in_region: false
       geo: false
       global: false
     model_card: model-card-google-gemma-4-31b.html
@@ -4097,27 +4407,32 @@ providers:
     regions:
     - region: us-east-1
       location: N. Virginia
-      in_region: true
+      in_region_mantle: true
+      in_region: false
       geo: false
       global: false
     - region: us-east-2
       location: Ohio
-      in_region: true
+      in_region_mantle: true
+      in_region: false
       geo: false
       global: false
     - region: us-west-2
       location: Oregon
-      in_region: true
+      in_region_mantle: true
+      in_region: false
       geo: false
       global: false
     - region: us-gov-west-1
-      location: GovCloud West
+      location: AWS GovCloud (US-West)
+      in_region_mantle: false
       in_region: true
       geo: false
       global: false
     - region: eu-central-1
       location: Frankfurt
-      in_region: true
+      in_region_mantle: true
+      in_region: false
       geo: false
       global: false
     model_card: model-card-google-gemma-4-26b-a4b.html
@@ -4125,27 +4440,32 @@ providers:
     regions:
     - region: us-east-1
       location: N. Virginia
-      in_region: true
+      in_region_mantle: true
+      in_region: false
       geo: false
       global: false
     - region: us-east-2
       location: Ohio
-      in_region: true
+      in_region_mantle: true
+      in_region: false
       geo: false
       global: false
     - region: us-west-2
       location: Oregon
-      in_region: true
+      in_region_mantle: true
+      in_region: false
       geo: false
       global: false
     - region: us-gov-west-1
-      location: GovCloud West
+      location: AWS GovCloud (US-West)
+      in_region_mantle: false
       in_region: true
       geo: false
       global: false
     - region: eu-central-1
       location: Frankfurt
-      in_region: true
+      in_region_mantle: true
+      in_region: false
       geo: false
       global: false
     model_card: model-card-google-gemma-4-e2b.html
@@ -4153,51 +4473,61 @@ providers:
     regions:
     - region: us-east-1
       location: N. Virginia
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: us-east-2
       location: Ohio
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: us-west-2
       location: Oregon
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: eu-south-1
       location: Milan
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: eu-west-1
       location: Ireland
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: eu-west-2
       location: London
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: ap-northeast-1
       location: Tokyo
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: ap-south-1
       location: Mumbai
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: ap-southeast-2
       location: Sydney
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: sa-east-1
       location: São Paulo
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
@@ -4206,51 +4536,61 @@ providers:
     regions:
     - region: us-east-1
       location: N. Virginia
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: us-east-2
       location: Ohio
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: us-west-2
       location: Oregon
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: eu-south-1
       location: Milan
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: eu-west-1
       location: Ireland
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: eu-west-2
       location: London
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: ap-northeast-1
       location: Tokyo
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: ap-south-1
       location: Mumbai
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: ap-southeast-2
       location: Sydney
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: sa-east-1
       location: São Paulo
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
@@ -4259,51 +4599,61 @@ providers:
     regions:
     - region: us-east-1
       location: N. Virginia
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: us-east-2
       location: Ohio
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: us-west-2
       location: Oregon
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: eu-south-1
       location: Milan
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: eu-west-1
       location: Ireland
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: eu-west-2
       location: London
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: ap-northeast-1
       location: Tokyo
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: ap-south-1
       location: Mumbai
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: ap-southeast-2
       location: Sydney
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: sa-east-1
       location: São Paulo
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
@@ -4376,7 +4726,7 @@ providers:
       geo: false
       global: false
     - region: us-gov-west-1
-      location: GovCloud
+      location: AWS GovCloud (US-West)
       in_region: true
       geo: false
       global: false
@@ -4409,7 +4759,7 @@ providers:
       geo: false
       global: false
     - region: us-gov-west-1
-      location: GovCloud
+      location: AWS GovCloud (US-West)
       in_region: true
       geo: false
       global: false
@@ -4603,51 +4953,61 @@ providers:
     regions:
     - region: us-east-1
       location: N. Virginia
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: us-east-2
       location: Ohio
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: us-west-2
       location: Oregon
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: eu-south-1
       location: Milan
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: eu-west-1
       location: Ireland
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: eu-west-2
       location: London
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: ap-northeast-1
       location: Tokyo
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: ap-south-1
       location: Mumbai
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: ap-southeast-2
       location: Sydney
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: sa-east-1
       location: São Paulo
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
@@ -4656,66 +5016,79 @@ providers:
     regions:
     - region: us-east-1
       location: N. Virginia
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: us-east-2
       location: Ohio
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: us-west-2
       location: Oregon
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: eu-central-1
       location: Frankfurt
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: eu-north-1
       location: Stockholm
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: eu-south-1
       location: Milan
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: eu-west-1
       location: Ireland
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: eu-west-2
       location: London
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: ap-northeast-1
       location: Tokyo
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: ap-south-1
       location: Mumbai
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: ap-southeast-2
       location: Sydney
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: ap-southeast-3
       location: Jakarta
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: sa-east-1
       location: São Paulo
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
@@ -4724,11 +5097,13 @@ providers:
     regions:
     - region: us-east-1
       location: N. Virginia
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: us-west-2
       location: Oregon
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
@@ -4737,66 +5112,79 @@ providers:
     regions:
     - region: us-east-1
       location: N. Virginia
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: us-east-2
       location: Ohio
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: us-west-2
       location: Oregon
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: eu-central-1
       location: Frankfurt
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: eu-north-1
       location: Stockholm
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: eu-south-1
       location: Milan
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: eu-west-1
       location: Ireland
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: eu-west-2
       location: London
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: ap-northeast-1
       location: Tokyo
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: ap-south-1
       location: Mumbai
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: ap-southeast-2
       location: Sydney
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: ap-southeast-3
       location: Jakarta
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: sa-east-1
       location: São Paulo
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
@@ -4806,51 +5194,61 @@ providers:
     regions:
     - region: us-east-1
       location: N. Virginia
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: us-east-2
       location: Ohio
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: us-west-2
       location: Oregon
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: eu-south-1
       location: Milan
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: eu-west-1
       location: Ireland
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: eu-west-2
       location: London
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: ap-northeast-1
       location: Tokyo
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: ap-south-1
       location: Mumbai
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: ap-southeast-2
       location: Sydney
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: sa-east-1
       location: São Paulo
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
@@ -4960,51 +5358,61 @@ providers:
     regions:
     - region: us-east-1
       location: N. Virginia
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: us-east-2
       location: Ohio
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: us-west-2
       location: Oregon
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: eu-south-1
       location: Milan
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: eu-west-1
       location: Ireland
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: eu-west-2
       location: London
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: ap-northeast-1
       location: Tokyo
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: ap-south-1
       location: Mumbai
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: ap-southeast-2
       location: Sydney
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: sa-east-1
       location: São Paulo
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
@@ -5109,51 +5517,61 @@ providers:
     regions:
     - region: us-east-1
       location: N. Virginia
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: us-east-2
       location: Ohio
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: us-west-2
       location: Oregon
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: eu-south-1
       location: Milan
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: eu-west-1
       location: Ireland
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: eu-west-2
       location: London
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: ap-northeast-1
       location: Tokyo
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: ap-south-1
       location: Mumbai
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: ap-southeast-2
       location: Sydney
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: sa-east-1
       location: São Paulo
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
@@ -5162,36 +5580,43 @@ providers:
     regions:
     - region: us-east-1
       location: N. Virginia
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: us-east-2
       location: Ohio
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: us-west-2
       location: Oregon
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: ap-northeast-1
       location: Tokyo
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: ap-south-1
       location: Mumbai
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: ap-southeast-2
       location: Sydney
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: sa-east-1
       location: São Paulo
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
@@ -5200,51 +5625,61 @@ providers:
     regions:
     - region: us-east-1
       location: N. Virginia
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: us-east-2
       location: Ohio
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: us-west-2
       location: Oregon
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: eu-south-1
       location: Milan
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: eu-west-1
       location: Ireland
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: eu-west-2
       location: London
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: ap-northeast-1
       location: Tokyo
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: ap-south-1
       location: Mumbai
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: ap-southeast-2
       location: Sydney
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: sa-east-1
       location: São Paulo
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
@@ -5253,51 +5688,61 @@ providers:
     regions:
     - region: us-east-1
       location: N. Virginia
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: us-east-2
       location: Ohio
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: us-west-2
       location: Oregon
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: eu-south-1
       location: Milan
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: eu-west-1
       location: Ireland
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: eu-west-2
       location: London
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: ap-northeast-1
       location: Tokyo
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: ap-south-1
       location: Mumbai
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: ap-southeast-2
       location: Sydney
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: sa-east-1
       location: São Paulo
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
@@ -5306,51 +5751,61 @@ providers:
     regions:
     - region: us-east-1
       location: N. Virginia
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: us-east-2
       location: Ohio
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: us-west-2
       location: Oregon
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: eu-south-1
       location: Milan
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: eu-west-1
       location: Ireland
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: eu-west-2
       location: London
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: ap-northeast-1
       location: Tokyo
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: ap-south-1
       location: Mumbai
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: ap-southeast-2
       location: Sydney
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: sa-east-1
       location: São Paulo
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
@@ -5359,61 +5814,73 @@ providers:
     regions:
     - region: us-east-1
       location: N. Virginia
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: us-east-2
       location: Ohio
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: us-west-2
       location: Oregon
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: eu-central-1
       location: Frankfurt
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: eu-north-1
       location: Stockholm
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: eu-south-1
       location: Milan
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: eu-west-1
       location: Ireland
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: eu-west-2
       location: London
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: ap-northeast-1
       location: Tokyo
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: ap-southeast-2
       location: Sydney
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: ap-southeast-3
       location: Jakarta
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: sa-east-1
       location: São Paulo
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
@@ -5449,7 +5916,7 @@ providers:
     - region: ca-west-1
       location: Calgary
       in_region: false
-      geo: false
+      geo: true
       global: true
     - region: eu-central-1
       location: Frankfurt
@@ -5514,12 +5981,12 @@ providers:
     - region: ap-south-1
       location: Mumbai
       in_region: false
-      geo: false
+      geo: true
       global: true
     - region: ap-south-2
       location: Hyderabad
       in_region: false
-      geo: false
+      geo: true
       global: true
     - region: ap-southeast-1
       location: Singapore
@@ -5586,51 +6053,61 @@ providers:
     regions:
     - region: us-east-1
       location: N. Virginia
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: us-east-2
       location: Ohio
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: us-west-2
       location: Oregon
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: eu-north-1
       location: Stockholm
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: eu-west-2
       location: London
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: ap-northeast-1
       location: Tokyo
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: ap-south-1
       location: Mumbai
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: ap-southeast-2
       location: Sydney
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: ap-southeast-3
       location: Jakarta
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: sa-east-1
       location: São Paulo
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
@@ -5640,61 +6117,73 @@ providers:
     regions:
     - region: us-east-1
       location: N. Virginia
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: us-east-2
       location: Ohio
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: us-west-2
       location: Oregon
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: eu-south-1
       location: Milan
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: eu-west-1
       location: Ireland
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: eu-west-2
       location: London
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: ap-northeast-1
       location: Tokyo
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: ap-south-1
       location: Mumbai
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: ap-southeast-2
       location: Sydney
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: sa-east-1
       location: São Paulo
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: us-gov-west-1
-      location: GovCloud
+      location: AWS GovCloud (US-West)
+      in_region_mantle: false
       in_region: true
       geo: true
       global: false
     - region: us-gov-east-1
-      location: GovCloud
+      location: AWS GovCloud (US-East)
+      in_region_mantle: false
       in_region: false
       geo: true
       global: false
@@ -5703,61 +6192,73 @@ providers:
     regions:
     - region: us-east-1
       location: N. Virginia
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: us-east-2
       location: Ohio
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: us-west-2
       location: Oregon
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: eu-south-1
       location: Milan
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: eu-west-1
       location: Ireland
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: eu-west-2
       location: London
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: ap-northeast-1
       location: Tokyo
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: ap-south-1
       location: Mumbai
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: ap-southeast-2
       location: Sydney
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: sa-east-1
       location: São Paulo
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: us-gov-west-1
-      location: GovCloud
+      location: AWS GovCloud (US-West)
+      in_region_mantle: false
       in_region: true
       geo: true
       global: false
     - region: us-gov-east-1
-      location: GovCloud
+      location: AWS GovCloud (US-East)
+      in_region_mantle: false
       in_region: false
       geo: true
       global: false
@@ -5766,61 +6267,73 @@ providers:
     regions:
     - region: us-east-1
       location: N. Virginia
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: us-east-2
       location: Ohio
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: us-west-2
       location: Oregon
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: eu-south-1
       location: Milan
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: eu-west-1
       location: Ireland
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: eu-west-2
       location: London
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: ap-northeast-1
       location: Tokyo
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: ap-south-1
       location: Mumbai
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: ap-southeast-2
       location: Sydney
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: sa-east-1
       location: São Paulo
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: us-gov-west-1
-      location: GovCloud
+      location: AWS GovCloud (US-West)
+      in_region_mantle: false
       in_region: true
       geo: true
       global: false
     - region: us-gov-east-1
-      location: GovCloud
+      location: AWS GovCloud (US-East)
+      in_region_mantle: false
       in_region: false
       geo: true
       global: false
@@ -5829,71 +6342,85 @@ providers:
     regions:
     - region: us-east-1
       location: N. Virginia
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: us-east-2
       location: Ohio
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: us-west-2
       location: Oregon
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: eu-south-1
       location: Milan
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: eu-west-1
       location: Ireland
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: eu-west-2
       location: London
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: ap-northeast-1
       location: Tokyo
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: ap-southeast-2
       location: Sydney
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: sa-east-1
       location: São Paulo
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: eu-central-1
       location: Frankfurt
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: eu-north-1
       location: Stockholm
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: ap-southeast-3
       location: Jakarta
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: us-gov-west-1
-      location: GovCloud
+      location: AWS GovCloud (US-West)
+      in_region_mantle: false
       in_region: true
       geo: true
       global: false
     - region: us-gov-east-1
-      location: GovCloud
+      location: AWS GovCloud (US-East)
+      in_region_mantle: false
       in_region: false
       geo: true
       global: false
@@ -5901,295 +6428,951 @@ providers:
   OpenAI:
   - name: GPT-6.1 Sol
     regions:
-    - endpoint: bedrock-mantle
-      region: us-east-1
+    - region: us-east-1
       location: N. Virginia
-      in_region: true
-      geo: false
-      global: false
-    - endpoint: bedrock-runtime
-      scope: US geographic and global inference
+      in_region_mantle: true
       in_region: false
       geo: true
+      global: true
+    - region: us-east-2
+      location: Ohio
+      in_region_mantle: false
+      in_region: false
+      geo: true
+      global: true
+    - region: us-west-1
+      location: N. California
+      in_region_mantle: false
+      in_region: false
+      geo: true
+      global: true
+    - region: us-west-2
+      location: Oregon
+      in_region_mantle: false
+      in_region: false
+      geo: true
+      global: true
+    - region: ca-central-1
+      location: Canada
+      in_region_mantle: false
+      in_region: false
+      geo: true
+      global: true
+    - region: ca-west-1
+      location: Calgary
+      in_region_mantle: false
+      in_region: false
+      geo: true
+      global: true
+    - region: eu-central-1
+      location: Frankfurt
+      in_region_mantle: false
+      in_region: false
+      geo: false
+      global: true
+    - region: eu-central-2
+      location: Zurich
+      in_region_mantle: false
+      in_region: false
+      geo: false
+      global: true
+    - region: eu-north-1
+      location: Stockholm
+      in_region_mantle: false
+      in_region: false
+      geo: false
+      global: true
+    - region: eu-south-1
+      location: Milan
+      in_region_mantle: false
+      in_region: false
+      geo: false
+      global: true
+    - region: eu-south-2
+      location: Spain
+      in_region_mantle: false
+      in_region: false
+      geo: false
+      global: true
+    - region: eu-west-1
+      location: Ireland
+      in_region_mantle: false
+      in_region: false
+      geo: false
+      global: true
+    - region: eu-west-2
+      location: London
+      in_region_mantle: false
+      in_region: false
+      geo: false
+      global: true
+    - region: eu-west-3
+      location: Paris
+      in_region_mantle: false
+      in_region: false
+      geo: false
+      global: true
+    - region: ap-east-2
+      location: Taipei
+      in_region_mantle: false
+      in_region: false
+      geo: false
+      global: true
+    - region: ap-northeast-1
+      location: Tokyo
+      in_region_mantle: false
+      in_region: false
+      geo: false
+      global: true
+    - region: ap-northeast-2
+      location: Seoul
+      in_region_mantle: false
+      in_region: false
+      geo: false
+      global: true
+    - region: ap-northeast-3
+      location: Osaka
+      in_region_mantle: false
+      in_region: false
+      geo: false
+      global: true
+    - region: ap-south-1
+      location: Mumbai
+      in_region_mantle: false
+      in_region: false
+      geo: false
+      global: true
+    - region: ap-south-2
+      location: Hyderabad
+      in_region_mantle: false
+      in_region: false
+      geo: false
+      global: true
+    - region: ap-southeast-1
+      location: Singapore
+      in_region_mantle: false
+      in_region: false
+      geo: false
+      global: true
+    - region: ap-southeast-2
+      location: Sydney
+      in_region_mantle: false
+      in_region: false
+      geo: false
+      global: true
+    - region: ap-southeast-3
+      location: Jakarta
+      in_region_mantle: false
+      in_region: false
+      geo: false
+      global: true
+    - region: ap-southeast-4
+      location: Melbourne
+      in_region_mantle: false
+      in_region: false
+      geo: false
+      global: true
+    - region: ap-southeast-5
+      location: Malaysia
+      in_region_mantle: false
+      in_region: false
+      geo: false
+      global: true
+    - region: ap-southeast-6
+      location: New Zealand
+      in_region_mantle: false
+      in_region: false
+      geo: false
+      global: true
+    - region: ap-southeast-7
+      location: Thailand
+      in_region_mantle: false
+      in_region: false
+      geo: false
+      global: true
+    - region: af-south-1
+      location: Cape Town
+      in_region_mantle: false
+      in_region: false
+      geo: false
+      global: true
+    - region: il-central-1
+      location: Tel Aviv
+      in_region_mantle: false
+      in_region: false
+      geo: false
+      global: true
+    - region: mx-central-1
+      location: Mexico
+      in_region_mantle: false
+      in_region: false
+      geo: false
+      global: true
+    - region: sa-east-1
+      location: São Paulo
+      in_region_mantle: false
+      in_region: false
+      geo: false
       global: true
     model_card: model-card-openai-gpt-6-1-sol.html
   - name: GPT-6 Astra
     regions:
     - region: us-east-1
       location: N. Virginia
-      in_region: true
+      in_region_mantle: true
+      in_region: false
       geo: true
       global: true
     - region: us-east-2
       location: Ohio
+      in_region_mantle: false
       in_region: false
       geo: true
       global: true
     - region: us-west-1
       location: N. California
+      in_region_mantle: false
       in_region: false
       geo: true
       global: true
     - region: us-west-2
       location: Oregon
-      in_region: true
+      in_region_mantle: true
+      in_region: false
       geo: true
       global: true
     - region: ca-central-1
       location: Canada
+      in_region_mantle: false
+      in_region: false
+      geo: true
+      global: true
+    - region: ca-west-1
+      location: Calgary
+      in_region_mantle: false
       in_region: false
       geo: true
       global: true
     - region: eu-central-1
       location: Frankfurt
+      in_region_mantle: false
+      in_region: false
+      geo: false
+      global: true
+    - region: eu-central-2
+      location: Zurich
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: eu-north-1
       location: Stockholm
+      in_region_mantle: false
+      in_region: false
+      geo: false
+      global: true
+    - region: eu-south-1
+      location: Milan
+      in_region_mantle: false
+      in_region: false
+      geo: false
+      global: true
+    - region: eu-south-2
+      location: Spain
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: eu-west-1
       location: Ireland
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: eu-west-2
       location: London
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: eu-west-3
       location: Paris
+      in_region_mantle: false
+      in_region: false
+      geo: false
+      global: true
+    - region: ap-east-2
+      location: Taipei
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: ap-northeast-1
       location: Tokyo
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: ap-northeast-2
       location: Seoul
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: ap-northeast-3
       location: Osaka
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: ap-south-1
       location: Mumbai
+      in_region_mantle: false
+      in_region: false
+      geo: false
+      global: true
+    - region: ap-south-2
+      location: Hyderabad
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: ap-southeast-1
       location: Singapore
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: ap-southeast-2
       location: Sydney
+      in_region_mantle: false
+      in_region: false
+      geo: false
+      global: true
+    - region: ap-southeast-3
+      location: Jakarta
+      in_region_mantle: false
+      in_region: false
+      geo: false
+      global: true
+    - region: ap-southeast-4
+      location: Melbourne
+      in_region_mantle: false
+      in_region: false
+      geo: false
+      global: true
+    - region: ap-southeast-5
+      location: Malaysia
+      in_region_mantle: false
+      in_region: false
+      geo: false
+      global: true
+    - region: ap-southeast-6
+      location: New Zealand
+      in_region_mantle: false
+      in_region: false
+      geo: false
+      global: true
+    - region: ap-southeast-7
+      location: Thailand
+      in_region_mantle: false
+      in_region: false
+      geo: false
+      global: true
+    - region: af-south-1
+      location: Cape Town
+      in_region_mantle: false
+      in_region: false
+      geo: false
+      global: true
+    - region: il-central-1
+      location: Tel Aviv
+      in_region_mantle: false
+      in_region: false
+      geo: false
+      global: true
+    - region: mx-central-1
+      location: Mexico
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: sa-east-1
       location: São Paulo
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     model_card: model-card-openai-gpt-6-astra.html
   - name: GPT-6 Sol
     regions:
-    - endpoint: bedrock-mantle
-      region: us-east-1
+    - region: us-east-1
       location: N. Virginia
-      in_region: true
-      geo: false
-      global: false
-    - endpoint: bedrock-runtime
-      region: us-east-1
-      location: ','
+      in_region_mantle: true
       in_region: false
       geo: true
+      global: true
+    - region: us-east-2
+      location: Ohio
+      in_region_mantle: false
+      in_region: false
+      geo: true
+      global: true
+    - region: us-west-1
+      location: N. California
+      in_region_mantle: false
+      in_region: false
+      geo: true
+      global: true
+    - region: us-west-2
+      location: Oregon
+      in_region_mantle: false
+      in_region: false
+      geo: true
+      global: true
+    - region: ca-central-1
+      location: Canada
+      in_region_mantle: false
+      in_region: false
+      geo: true
+      global: true
+    - region: ca-west-1
+      location: Calgary
+      in_region_mantle: false
+      in_region: false
+      geo: true
+      global: true
+    - region: eu-central-1
+      location: Frankfurt
+      in_region_mantle: false
+      in_region: false
+      geo: false
+      global: true
+    - region: eu-central-2
+      location: Zurich
+      in_region_mantle: false
+      in_region: false
+      geo: false
+      global: true
+    - region: eu-north-1
+      location: Stockholm
+      in_region_mantle: false
+      in_region: false
+      geo: false
+      global: true
+    - region: eu-south-1
+      location: Milan
+      in_region_mantle: false
+      in_region: false
+      geo: false
+      global: true
+    - region: eu-south-2
+      location: Spain
+      in_region_mantle: false
+      in_region: false
+      geo: false
+      global: true
+    - region: eu-west-1
+      location: Ireland
+      in_region_mantle: false
+      in_region: false
+      geo: false
+      global: true
+    - region: eu-west-2
+      location: London
+      in_region_mantle: false
+      in_region: false
+      geo: false
+      global: true
+    - region: eu-west-3
+      location: Paris
+      in_region_mantle: false
+      in_region: false
+      geo: false
+      global: true
+    - region: ap-east-2
+      location: Taipei
+      in_region_mantle: false
+      in_region: false
+      geo: false
+      global: true
+    - region: ap-northeast-1
+      location: Tokyo
+      in_region_mantle: false
+      in_region: false
+      geo: false
+      global: true
+    - region: ap-northeast-2
+      location: Seoul
+      in_region_mantle: false
+      in_region: false
+      geo: false
+      global: true
+    - region: ap-northeast-3
+      location: Osaka
+      in_region_mantle: false
+      in_region: false
+      geo: false
+      global: true
+    - region: ap-south-1
+      location: Mumbai
+      in_region_mantle: false
+      in_region: false
+      geo: false
+      global: true
+    - region: ap-south-2
+      location: Hyderabad
+      in_region_mantle: false
+      in_region: false
+      geo: false
+      global: true
+    - region: ap-southeast-1
+      location: Singapore
+      in_region_mantle: false
+      in_region: false
+      geo: false
+      global: true
+    - region: ap-southeast-2
+      location: Sydney
+      in_region_mantle: false
+      in_region: false
+      geo: false
+      global: true
+    - region: ap-southeast-3
+      location: Jakarta
+      in_region_mantle: false
+      in_region: false
+      geo: false
+      global: true
+    - region: ap-southeast-4
+      location: Melbourne
+      in_region_mantle: false
+      in_region: false
+      geo: false
+      global: true
+    - region: ap-southeast-5
+      location: Malaysia
+      in_region_mantle: false
+      in_region: false
+      geo: false
+      global: true
+    - region: ap-southeast-6
+      location: New Zealand
+      in_region_mantle: false
+      in_region: false
+      geo: false
+      global: true
+    - region: ap-southeast-7
+      location: Thailand
+      in_region_mantle: false
+      in_region: false
+      geo: false
+      global: true
+    - region: af-south-1
+      location: Cape Town
+      in_region_mantle: false
+      in_region: false
+      geo: false
+      global: true
+    - region: il-central-1
+      location: Tel Aviv
+      in_region_mantle: false
+      in_region: false
+      geo: false
+      global: true
+    - region: mx-central-1
+      location: Mexico
+      in_region_mantle: false
+      in_region: false
+      geo: false
+      global: true
+    - region: sa-east-1
+      location: São Paulo
+      in_region_mantle: false
+      in_region: false
+      geo: false
       global: true
     model_card: model-card-openai-gpt-6-sol.html
   - name: GPT-6 Luna
     regions:
-    - endpoint: bedrock-mantle
-      region: us-east-1
+    - region: us-east-1
       location: N. Virginia
-      in_region: true
-      geo: false
-      global: false
-    - endpoint: bedrock-runtime
-      region: us-east-1
-      location: ','
+      in_region_mantle: true
       in_region: false
       geo: true
+      global: true
+    - region: us-east-2
+      location: Ohio
+      in_region_mantle: false
+      in_region: false
+      geo: true
+      global: true
+    - region: us-west-1
+      location: N. California
+      in_region_mantle: false
+      in_region: false
+      geo: true
+      global: true
+    - region: us-west-2
+      location: Oregon
+      in_region_mantle: false
+      in_region: false
+      geo: true
+      global: true
+    - region: ca-central-1
+      location: Canada
+      in_region_mantle: false
+      in_region: false
+      geo: true
+      global: true
+    - region: ca-west-1
+      location: Calgary
+      in_region_mantle: false
+      in_region: false
+      geo: true
+      global: true
+    - region: eu-central-1
+      location: Frankfurt
+      in_region_mantle: false
+      in_region: false
+      geo: false
+      global: true
+    - region: eu-central-2
+      location: Zurich
+      in_region_mantle: false
+      in_region: false
+      geo: false
+      global: true
+    - region: eu-north-1
+      location: Stockholm
+      in_region_mantle: false
+      in_region: false
+      geo: false
+      global: true
+    - region: eu-south-1
+      location: Milan
+      in_region_mantle: false
+      in_region: false
+      geo: false
+      global: true
+    - region: eu-south-2
+      location: Spain
+      in_region_mantle: false
+      in_region: false
+      geo: false
+      global: true
+    - region: eu-west-1
+      location: Ireland
+      in_region_mantle: false
+      in_region: false
+      geo: false
+      global: true
+    - region: eu-west-2
+      location: London
+      in_region_mantle: false
+      in_region: false
+      geo: false
+      global: true
+    - region: eu-west-3
+      location: Paris
+      in_region_mantle: false
+      in_region: false
+      geo: false
+      global: true
+    - region: ap-east-2
+      location: Taipei
+      in_region_mantle: false
+      in_region: false
+      geo: false
+      global: true
+    - region: ap-northeast-1
+      location: Tokyo
+      in_region_mantle: false
+      in_region: false
+      geo: false
+      global: true
+    - region: ap-northeast-2
+      location: Seoul
+      in_region_mantle: false
+      in_region: false
+      geo: false
+      global: true
+    - region: ap-northeast-3
+      location: Osaka
+      in_region_mantle: false
+      in_region: false
+      geo: false
+      global: true
+    - region: ap-south-1
+      location: Mumbai
+      in_region_mantle: false
+      in_region: false
+      geo: false
+      global: true
+    - region: ap-south-2
+      location: Hyderabad
+      in_region_mantle: false
+      in_region: false
+      geo: false
+      global: true
+    - region: ap-southeast-1
+      location: Singapore
+      in_region_mantle: false
+      in_region: false
+      geo: false
+      global: true
+    - region: ap-southeast-2
+      location: Sydney
+      in_region_mantle: false
+      in_region: false
+      geo: false
+      global: true
+    - region: ap-southeast-3
+      location: Jakarta
+      in_region_mantle: false
+      in_region: false
+      geo: false
+      global: true
+    - region: ap-southeast-4
+      location: Melbourne
+      in_region_mantle: false
+      in_region: false
+      geo: false
+      global: true
+    - region: ap-southeast-5
+      location: Malaysia
+      in_region_mantle: false
+      in_region: false
+      geo: false
+      global: true
+    - region: ap-southeast-6
+      location: New Zealand
+      in_region_mantle: false
+      in_region: false
+      geo: false
+      global: true
+    - region: ap-southeast-7
+      location: Thailand
+      in_region_mantle: false
+      in_region: false
+      geo: false
+      global: true
+    - region: af-south-1
+      location: Cape Town
+      in_region_mantle: false
+      in_region: false
+      geo: false
+      global: true
+    - region: il-central-1
+      location: Tel Aviv
+      in_region_mantle: false
+      in_region: false
+      geo: false
+      global: true
+    - region: mx-central-1
+      location: Mexico
+      in_region_mantle: false
+      in_region: false
+      geo: false
+      global: true
+    - region: sa-east-1
+      location: São Paulo
+      in_region_mantle: false
+      in_region: false
+      geo: false
       global: true
     model_card: model-card-openai-gpt-6-luna.html
   - name: GPT-5.6 Sol
     regions:
     - region: us-east-1
       location: N. Virginia
-      in_region: true
+      in_region_mantle: true
+      in_region: false
       geo: true
       global: true
     - region: us-east-2
       location: Ohio
-      in_region: true
+      in_region_mantle: true
+      in_region: false
       geo: true
       global: true
     - region: us-west-1
       location: N. California
+      in_region_mantle: false
       in_region: false
       geo: true
       global: true
     - region: us-west-2
       location: Oregon
+      in_region_mantle: false
       in_region: false
       geo: true
       global: true
     - region: ca-central-1
       location: Canada
+      in_region_mantle: false
       in_region: false
-      geo: false
+      geo: true
       global: true
     - region: ca-west-1
       location: Calgary
+      in_region_mantle: false
       in_region: false
-      geo: false
-      global: true
+      geo: true
+      global: false
     - region: eu-central-1
       location: Frankfurt
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: eu-central-2
       location: Zurich
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: eu-north-1
       location: Stockholm
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: eu-south-1
       location: Milan
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: eu-south-2
       location: Spain
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: eu-west-1
       location: Ireland
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: eu-west-2
       location: London
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: eu-west-3
       location: Paris
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: ap-east-2
       location: Taipei
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: ap-northeast-1
       location: Tokyo
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: ap-northeast-2
       location: Seoul
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: ap-northeast-3
       location: Osaka
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: ap-south-1
       location: Mumbai
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: ap-south-2
       location: Hyderabad
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: ap-southeast-1
       location: Singapore
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: ap-southeast-2
       location: Sydney
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: ap-southeast-3
       location: Jakarta
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: ap-southeast-4
       location: Melbourne
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: ap-southeast-5
       location: Malaysia
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: ap-southeast-6
       location: New Zealand
+      in_region_mantle: false
       in_region: false
       geo: false
-      global: true
+      global: false
     - region: ap-southeast-7
       location: Thailand
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: il-central-1
       location: Tel Aviv
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: me-central-1
       location: UAE
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: me-south-1
       location: Bahrain
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: af-south-1
       location: Cape Town
+      in_region_mantle: false
       in_region: false
       geo: false
-      global: true
+      global: false
     - region: sa-east-1
       location: São Paulo
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
@@ -6214,171 +7397,205 @@ providers:
     regions:
     - region: us-east-1
       location: N. Virginia
-      in_region: true
+      in_region_mantle: true
+      in_region: false
       geo: true
       global: true
     - region: us-east-2
       location: Ohio
-      in_region: true
+      in_region_mantle: true
+      in_region: false
       geo: true
       global: true
     - region: us-west-1
       location: N. California
+      in_region_mantle: false
       in_region: false
       geo: true
       global: true
     - region: us-west-2
       location: Oregon
-      in_region: true
+      in_region_mantle: true
+      in_region: false
       geo: true
       global: true
     - region: ca-central-1
       location: Canada
+      in_region_mantle: false
       in_region: false
-      geo: false
+      geo: true
       global: true
     - region: ca-west-1
       location: Calgary
+      in_region_mantle: false
       in_region: false
-      geo: false
-      global: true
+      geo: true
+      global: false
     - region: eu-central-1
       location: Frankfurt
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: eu-central-2
       location: Zurich
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: eu-north-1
       location: Stockholm
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: eu-south-1
       location: Milan
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: eu-south-2
       location: Spain
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: eu-west-1
       location: Ireland
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: eu-west-2
       location: London
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: eu-west-3
       location: Paris
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: ap-east-2
       location: Taipei
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: ap-northeast-1
       location: Tokyo
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: ap-northeast-2
       location: Seoul
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: ap-northeast-3
       location: Osaka
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: ap-south-1
       location: Mumbai
+      in_region_mantle: false
       in_region: false
       geo: true
       global: true
     - region: ap-south-2
       location: Hyderabad
+      in_region_mantle: false
       in_region: false
       geo: true
       global: true
     - region: ap-southeast-1
       location: Singapore
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: ap-southeast-2
       location: Sydney
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: ap-southeast-3
       location: Jakarta
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: ap-southeast-4
       location: Melbourne
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: ap-southeast-5
       location: Malaysia
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: ap-southeast-6
       location: New Zealand
+      in_region_mantle: false
       in_region: false
       geo: false
-      global: true
+      global: false
     - region: ap-southeast-7
       location: Thailand
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: il-central-1
       location: Tel Aviv
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: me-central-1
       location: UAE
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: me-south-1
       location: Bahrain
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: af-south-1
       location: Cape Town
+      in_region_mantle: false
       in_region: false
       geo: false
-      global: true
+      global: false
     - region: sa-east-1
       location: São Paulo
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: us-gov-west-1
-      location: GovCloud West
+      location: AWS GovCloud (US-West)
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: us-gov-east-1
-      location: GovCloud East
+      location: AWS GovCloud (US-East)
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
@@ -6387,171 +7604,205 @@ providers:
     regions:
     - region: us-east-1
       location: N. Virginia
-      in_region: true
+      in_region_mantle: true
+      in_region: false
       geo: true
       global: true
     - region: us-east-2
       location: Ohio
-      in_region: true
+      in_region_mantle: true
+      in_region: false
       geo: true
       global: true
     - region: us-west-1
       location: N. California
+      in_region_mantle: false
       in_region: false
       geo: true
       global: true
     - region: us-west-2
       location: Oregon
-      in_region: true
+      in_region_mantle: true
+      in_region: false
       geo: true
       global: true
     - region: ca-central-1
       location: Canada
+      in_region_mantle: false
       in_region: false
-      geo: false
+      geo: true
       global: true
     - region: ca-west-1
       location: Calgary
+      in_region_mantle: false
       in_region: false
-      geo: false
-      global: true
+      geo: true
+      global: false
     - region: eu-central-1
       location: Frankfurt
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: eu-central-2
       location: Zurich
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: eu-north-1
       location: Stockholm
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: eu-south-1
       location: Milan
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: eu-south-2
       location: Spain
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: eu-west-1
       location: Ireland
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: eu-west-2
       location: London
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: eu-west-3
       location: Paris
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: ap-east-2
       location: Taipei
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: ap-northeast-1
       location: Tokyo
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: ap-northeast-2
       location: Seoul
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: ap-northeast-3
       location: Osaka
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: ap-south-1
       location: Mumbai
+      in_region_mantle: false
       in_region: false
       geo: true
       global: true
     - region: ap-south-2
       location: Hyderabad
+      in_region_mantle: false
       in_region: false
       geo: true
       global: true
     - region: ap-southeast-1
       location: Singapore
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: ap-southeast-2
       location: Sydney
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: ap-southeast-3
       location: Jakarta
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: ap-southeast-4
       location: Melbourne
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: ap-southeast-5
       location: Malaysia
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: ap-southeast-6
       location: New Zealand
+      in_region_mantle: false
       in_region: false
       geo: false
-      global: true
+      global: false
     - region: ap-southeast-7
       location: Thailand
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: il-central-1
       location: Tel Aviv
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: me-central-1
       location: UAE
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: me-south-1
       location: Bahrain
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: af-south-1
       location: Cape Town
+      in_region_mantle: false
       in_region: false
       geo: false
-      global: true
+      global: false
     - region: sa-east-1
       location: São Paulo
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: us-gov-west-1
-      location: GovCloud West
+      location: AWS GovCloud (US-West)
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: us-gov-east-1
-      location: GovCloud East
+      location: AWS GovCloud (US-East)
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
@@ -6560,34 +7811,40 @@ providers:
     regions:
     - region: us-east-1
       location: N. Virginia
-      in_region: true
-      geo: false
-      global: false
+      in_region_mantle: true
+      in_region: false
+      geo: true
+      global: true
     - region: us-east-2
       location: Ohio
-      in_region: true
-      geo: false
-      global: false
+      in_region_mantle: true
+      in_region: false
+      geo: true
+      global: true
     model_card: model-card-openai-gpt-55.html
   - name: GPT-5.4
     regions:
     - region: us-east-1
       location: N. Virginia
-      in_region: true
-      geo: false
-      global: false
+      in_region_mantle: true
+      in_region: false
+      geo: true
+      global: true
     - region: us-east-2
       location: Ohio
-      in_region: true
-      geo: false
-      global: false
+      in_region_mantle: true
+      in_region: false
+      geo: true
+      global: true
     - region: us-west-2
       location: Oregon
-      in_region: true
-      geo: false
-      global: false
+      in_region_mantle: true
+      in_region: false
+      geo: true
+      global: true
     - region: us-gov-west-1
-      location: GovCloud
+      location: AWS GovCloud (US-West)
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
@@ -6596,51 +7853,61 @@ providers:
     regions:
     - region: us-east-1
       location: N. Virginia
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: us-east-2
       location: Ohio
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: us-west-2
       location: Oregon
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: eu-south-1
       location: Milan
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: eu-west-1
       location: Ireland
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: eu-west-2
       location: London
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: ap-northeast-1
       location: Tokyo
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: ap-south-1
       location: Mumbai
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: ap-southeast-2
       location: Sydney
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: sa-east-1
       location: São Paulo
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
@@ -6649,76 +7916,91 @@ providers:
     regions:
     - region: us-east-1
       location: N. Virginia
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: us-east-2
       location: Ohio
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: us-west-2
       location: Oregon
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: eu-central-1
       location: Frankfurt
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: eu-north-1
       location: Stockholm
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: eu-south-1
       location: Milan
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: eu-west-1
       location: Ireland
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: eu-west-2
       location: London
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: ap-northeast-1
       location: Tokyo
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: ap-south-1
       location: Mumbai
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: ap-southeast-2
       location: Sydney
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: ap-southeast-3
       location: Jakarta
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: sa-east-1
       location: São Paulo
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: us-gov-west-1
-      location: GovCloud
+      location: AWS GovCloud (US-West)
+      in_region_mantle: false
       in_region: true
       geo: true
       global: false
     - region: us-gov-east-1
-      location: GovCloud
+      location: AWS GovCloud (US-East)
+      in_region_mantle: false
       in_region: false
       geo: true
       global: false
@@ -6727,51 +8009,61 @@ providers:
     regions:
     - region: us-east-1
       location: N. Virginia
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: us-east-2
       location: Ohio
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: us-west-2
       location: Oregon
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: eu-south-1
       location: Milan
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: eu-west-1
       location: Ireland
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: eu-west-2
       location: London
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: ap-northeast-1
       location: Tokyo
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: ap-south-1
       location: Mumbai
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: ap-southeast-2
       location: Sydney
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: sa-east-1
       location: São Paulo
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
@@ -6780,76 +8072,91 @@ providers:
     regions:
     - region: us-east-1
       location: N. Virginia
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: us-east-2
       location: Ohio
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: us-west-2
       location: Oregon
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: eu-central-1
       location: Frankfurt
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: eu-north-1
       location: Stockholm
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: eu-south-1
       location: Milan
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: eu-west-1
       location: Ireland
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: eu-west-2
       location: London
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: ap-northeast-1
       location: Tokyo
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: ap-south-1
       location: Mumbai
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: ap-southeast-2
       location: Sydney
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: ap-southeast-3
       location: Jakarta
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: sa-east-1
       location: São Paulo
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: us-gov-west-1
-      location: GovCloud
+      location: AWS GovCloud (US-West)
+      in_region_mantle: false
       in_region: true
       geo: true
       global: false
     - region: us-gov-east-1
-      location: GovCloud
+      location: AWS GovCloud (US-East)
+      in_region_mantle: false
       in_region: false
       geo: true
       global: false
@@ -6859,16 +8166,19 @@ providers:
     regions:
     - region: us-east-1
       location: N. Virginia
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: eu-west-2
       location: London
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: ap-southeast-2
       location: Sydney
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
@@ -6877,41 +8187,49 @@ providers:
     regions:
     - region: us-east-2
       location: Ohio
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: us-west-2
       location: Oregon
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: eu-north-1
       location: Stockholm
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: eu-west-2
       location: London
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: ap-northeast-1
       location: Tokyo
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: ap-south-1
       location: Mumbai
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: ap-southeast-2
       location: Sydney
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: ap-southeast-3
       location: Jakarta
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
@@ -6920,51 +8238,61 @@ providers:
     regions:
     - region: us-east-2
       location: Ohio
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: us-west-2
       location: Oregon
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: eu-central-1
       location: Frankfurt
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: eu-north-1
       location: Stockholm
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: eu-south-1
       location: Milan
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: eu-west-2
       location: London
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: ap-northeast-1
       location: Tokyo
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: ap-south-1
       location: Mumbai
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: ap-southeast-2
       location: Sydney
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: ap-southeast-3
       location: Jakarta
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
@@ -6973,51 +8301,61 @@ providers:
     regions:
     - region: us-east-1
       location: N. Virginia
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: us-east-2
       location: Ohio
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: us-west-2
       location: Oregon
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: eu-south-1
       location: Milan
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: eu-west-1
       location: Ireland
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: eu-west-2
       location: London
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: ap-northeast-1
       location: Tokyo
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: ap-south-1
       location: Mumbai
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: ap-southeast-2
       location: Sydney
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: sa-east-1
       location: São Paulo
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
@@ -7026,51 +8364,61 @@ providers:
     regions:
     - region: us-east-1
       location: N. Virginia
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: us-east-2
       location: Ohio
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: us-west-2
       location: Oregon
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: eu-south-1
       location: Milan
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: eu-west-1
       location: Ireland
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: eu-west-2
       location: London
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: ap-northeast-1
       location: Tokyo
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: ap-south-1
       location: Mumbai
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: ap-southeast-2
       location: Sydney
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: sa-east-1
       location: São Paulo
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
@@ -7079,66 +8427,79 @@ providers:
     regions:
     - region: us-east-1
       location: N. Virginia
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: us-east-2
       location: Ohio
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: us-west-2
       location: Oregon
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: eu-central-1
       location: Frankfurt
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: eu-north-1
       location: Stockholm
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: eu-south-1
       location: Milan
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: eu-west-1
       location: Ireland
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: eu-west-2
       location: London
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: ap-northeast-1
       location: Tokyo
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: ap-south-1
       location: Mumbai
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: ap-southeast-2
       location: Sydney
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: ap-southeast-3
       location: Jakarta
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: sa-east-1
       location: São Paulo
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
@@ -7147,66 +8508,79 @@ providers:
     regions:
     - region: us-east-1
       location: N. Virginia
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: us-east-2
       location: Ohio
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: us-west-2
       location: Oregon
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: eu-central-1
       location: Frankfurt
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: eu-north-1
       location: Stockholm
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: eu-south-1
       location: Milan
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: eu-west-1
       location: Ireland
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: eu-west-2
       location: London
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: ap-northeast-1
       location: Tokyo
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: ap-south-1
       location: Mumbai
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: ap-southeast-2
       location: Sydney
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: ap-southeast-3
       location: Jakarta
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: sa-east-1
       location: São Paulo
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
@@ -7584,7 +8958,7 @@ providers:
     - region: ap-northeast-2
       location: Seoul
       in_region: true
-      geo: false
+      geo: true
       global: true
     - region: ap-northeast-3
       location: Osaka
@@ -7667,16 +9041,19 @@ providers:
     regions:
     - region: us-east-1
       location: N. Virginia
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: us-east-2
       location: Ohio
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: us-west-2
       location: Oregon
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
@@ -7753,7 +9130,7 @@ providers:
     - region: ca-central-1
       location: Canada
       in_region: false
-      geo: false
+      geo: true
       global: true
     - region: eu-north-1
       location: Stockholm
@@ -7875,171 +9252,205 @@ providers:
     regions:
     - region: us-east-1
       location: N. Virginia
+      in_region_mantle: false
       in_region: false
       geo: true
       global: true
     - region: us-east-2
       location: Ohio
+      in_region_mantle: false
       in_region: false
       geo: true
       global: true
     - region: us-west-1
       location: N. California
+      in_region_mantle: false
       in_region: false
       geo: true
       global: true
     - region: us-west-2
       location: Oregon
+      in_region_mantle: true
       in_region: false
       geo: true
       global: true
     - region: us-gov-west-1
-      location: GovCloud West
+      location: AWS GovCloud (US-West)
+      in_region_mantle: false
       in_region: false
       geo: true
       global: false
     - region: us-gov-east-1
-      location: GovCloud East
+      location: AWS GovCloud (US-East)
+      in_region_mantle: true
       in_region: true
       geo: true
       global: false
     - region: ca-central-1
       location: Canada
+      in_region_mantle: false
       in_region: false
-      geo: false
+      geo: true
       global: true
     - region: ca-west-1
       location: Calgary
+      in_region_mantle: false
       in_region: false
-      geo: false
-      global: true
+      geo: true
+      global: false
     - region: eu-central-1
       location: Frankfurt
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: eu-central-2
       location: Zurich
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: eu-north-1
       location: Stockholm
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: eu-south-1
       location: Milan
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: eu-south-2
       location: Spain
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: eu-west-1
       location: Ireland
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: eu-west-2
       location: London
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: eu-west-3
       location: Paris
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: ap-east-2
       location: Taipei
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: ap-northeast-1
       location: Tokyo
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: ap-northeast-2
       location: Seoul
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: ap-northeast-3
       location: Osaka
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: ap-south-1
       location: Mumbai
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: ap-south-2
       location: Hyderabad
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: ap-southeast-1
       location: Singapore
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: ap-southeast-2
       location: Sydney
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: ap-southeast-3
       location: Jakarta
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: ap-southeast-4
       location: Melbourne
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: ap-southeast-5
       location: Malaysia
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: ap-southeast-6
       location: New Zealand
+      in_region_mantle: false
       in_region: false
       geo: false
-      global: true
+      global: false
     - region: ap-southeast-7
       location: Thailand
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: il-central-1
       location: Tel Aviv
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: me-central-1
       location: UAE
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: me-south-1
       location: Bahrain
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
     - region: af-south-1
       location: Cape Town
+      in_region_mantle: false
       in_region: false
       geo: false
-      global: true
+      global: false
     - region: sa-east-1
       location: São Paulo
+      in_region_mantle: false
       in_region: false
       geo: false
       global: true
@@ -8048,21 +9459,25 @@ providers:
     regions:
     - region: us-west-2
       location: Oregon
-      in_region: true
-      geo: true
+      in_region_mantle: true
+      in_region: false
+      geo: false
       global: false
     - region: us-east-1
       location: N. Virginia
-      in_region: true
-      geo: true
+      in_region_mantle: true
+      in_region: false
+      geo: false
       global: false
     - region: us-east-2
       location: Ohio
-      in_region: true
-      geo: true
+      in_region_mantle: true
+      in_region: false
+      geo: false
       global: false
     - region: us-gov-west-1
-      location: GovCloud West
+      location: AWS GovCloud (US-West)
+      in_region_mantle: false
       in_region: true
       geo: false
       global: false
@@ -8072,66 +9487,79 @@ providers:
     regions:
     - region: us-east-1
       location: N. Virginia
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: us-east-2
       location: Ohio
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: us-west-2
       location: Oregon
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: eu-central-1
       location: Frankfurt
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: eu-north-1
       location: Stockholm
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: eu-south-1
       location: Milan
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: eu-west-1
       location: Ireland
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: eu-west-2
       location: London
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: ap-northeast-1
       location: Tokyo
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: ap-south-1
       location: Mumbai
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: ap-southeast-2
       location: Sydney
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: ap-southeast-3
       location: Jakarta
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: sa-east-1
       location: São Paulo
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
@@ -8140,51 +9568,61 @@ providers:
     regions:
     - region: us-east-1
       location: N. Virginia
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: us-east-2
       location: Ohio
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: us-west-2
       location: Oregon
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: eu-north-1
       location: Stockholm
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: eu-west-2
       location: London
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: ap-northeast-1
       location: Tokyo
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: ap-south-1
       location: Mumbai
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: ap-southeast-2
       location: Sydney
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: ap-southeast-3
       location: Jakarta
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: sa-east-1
       location: São Paulo
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
@@ -8193,51 +9631,61 @@ providers:
     regions:
     - region: us-east-1
       location: N. Virginia
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: us-east-2
       location: Ohio
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: us-west-2
       location: Oregon
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: eu-north-1
       location: Stockholm
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: eu-west-2
       location: London
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: ap-northeast-1
       location: Tokyo
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: ap-south-1
       location: Mumbai
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: ap-southeast-2
       location: Sydney
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: ap-southeast-3
       location: Jakarta
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false
     - region: sa-east-1
       location: São Paulo
+      in_region_mantle: true
       in_region: true
       geo: false
       global: false

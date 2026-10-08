@@ -507,6 +507,11 @@ providers:
       in_region: false
       geo: true
       global: false
+    - region: ap-east-2
+      location: Taipei
+      in_region: false
+      geo: true
+      global: false
     - region: ap-northeast-1
       location: Tokyo
       in_region: false
@@ -537,6 +542,21 @@ providers:
       in_region: true
       geo: true
       global: false
+    - region: ap-southeast-4
+      location: Melbourne
+      in_region: false
+      geo: true
+      global: false
+    - region: ap-southeast-5
+      location: Malaysia
+      in_region: false
+      geo: true
+      global: false
+    - region: ap-southeast-7
+      location: Thailand
+      in_region: false
+      geo: true
+      global: false
     - region: il-central-1
       location: Tel Aviv
       in_region: false
@@ -545,7 +565,7 @@ providers:
     - region: me-central-1
       location: UAE
       in_region: true
-      geo: false
+      geo: true
       global: false
     model_card: model-card-amazon-nova-pro.html
   - name: Nova Reel
@@ -781,6 +801,219 @@ providers:
       global: false
     model_card: model-card-amazon-nova-micro.html
   Anthropic:
+  - name: Claude Haiku 5.5
+    regions:
+    - region: us-east-1
+      location: N. Virginia
+      in_region_mantle: false
+      in_region: false
+      geo: true
+      global: true
+    - region: us-east-2
+      location: Ohio
+      in_region_mantle: false
+      in_region: false
+      geo: true
+      global: true
+    - region: us-west-1
+      location: N. California
+      in_region_mantle: false
+      in_region: false
+      geo: true
+      global: true
+    - region: us-west-2
+      location: Oregon
+      in_region_mantle: false
+      in_region: false
+      geo: true
+      global: true
+    - region: ca-central-1
+      location: Canada
+      in_region_mantle: false
+      in_region: false
+      geo: true
+      global: true
+    - region: ca-west-1
+      location: Calgary
+      in_region_mantle: false
+      in_region: false
+      geo: true
+      global: true
+    - region: eu-central-1
+      location: Frankfurt
+      in_region_mantle: false
+      in_region: false
+      geo: true
+      global: true
+    - region: eu-central-2
+      location: Zurich
+      in_region_mantle: false
+      in_region: false
+      geo: true
+      global: true
+    - region: eu-north-1
+      location: Stockholm
+      in_region_mantle: false
+      in_region: false
+      geo: true
+      global: true
+    - region: eu-south-1
+      location: Milan
+      in_region_mantle: false
+      in_region: false
+      geo: true
+      global: true
+    - region: eu-south-2
+      location: Spain
+      in_region_mantle: false
+      in_region: false
+      geo: true
+      global: true
+    - region: eu-west-1
+      location: Ireland
+      in_region_mantle: false
+      in_region: false
+      geo: true
+      global: true
+    - region: eu-west-2
+      location: London
+      in_region_mantle: false
+      in_region: false
+      geo: true
+      global: true
+    - region: eu-west-3
+      location: Paris
+      in_region_mantle: false
+      in_region: false
+      geo: true
+      global: true
+    - region: ap-southeast-2
+      location: Sydney
+      in_region_mantle: false
+      in_region: false
+      geo: true
+      global: true
+    - region: ap-southeast-4
+      location: Melbourne
+      in_region_mantle: false
+      in_region: false
+      geo: true
+      global: true
+    - region: ap-east-2
+      location: Taipei
+      in_region_mantle: false
+      in_region: false
+      geo: false
+      global: true
+    - region: ap-northeast-1
+      location: Tokyo
+      in_region_mantle: false
+      in_region: false
+      geo: true
+      global: true
+    - region: ap-northeast-2
+      location: Seoul
+      in_region_mantle: false
+      in_region: false
+      geo: false
+      global: true
+    - region: ap-northeast-3
+      location: Osaka
+      in_region_mantle: false
+      in_region: false
+      geo: true
+      global: true
+    - region: ap-south-1
+      location: Mumbai
+      in_region_mantle: false
+      in_region: false
+      geo: false
+      global: true
+    - region: ap-south-2
+      location: Hyderabad
+      in_region_mantle: false
+      in_region: false
+      geo: false
+      global: true
+    - region: ap-southeast-1
+      location: Singapore
+      in_region_mantle: false
+      in_region: false
+      geo: false
+      global: true
+    - region: ap-southeast-3
+      location: Jakarta
+      in_region_mantle: false
+      in_region: false
+      geo: false
+      global: true
+    - region: ap-southeast-5
+      location: Malaysia
+      in_region_mantle: false
+      in_region: false
+      geo: false
+      global: true
+    - region: ap-southeast-6
+      location: New Zealand
+      in_region_mantle: false
+      in_region: false
+      geo: false
+      global: true
+    - region: ap-southeast-7
+      location: Thailand
+      in_region_mantle: false
+      in_region: false
+      geo: false
+      global: true
+    - region: il-central-1
+      location: Tel Aviv
+      in_region_mantle: false
+      in_region: false
+      geo: false
+      global: true
+    - region: me-central-1
+      location: UAE
+      in_region_mantle: false
+      in_region: false
+      geo: false
+      global: true
+    - region: me-south-1
+      location: Bahrain
+      in_region_mantle: false
+      in_region: false
+      geo: false
+      global: true
+    - region: af-south-1
+      location: Cape Town
+      in_region_mantle: false
+      in_region: false
+      geo: false
+      global: true
+    - region: sa-east-1
+      location: São Paulo
+      in_region_mantle: false
+      in_region: false
+      geo: false
+      global: true
+    - region: mx-central-1
+      location: Mexico
+      in_region_mantle: false
+      in_region: false
+      geo: false
+      global: true
+    - region: us-gov-west-1
+      location: AWS GovCloud (US-West)
+      in_region_mantle: true
+      in_region: false
+      geo: true
+      global: false
+    - region: us-gov-east-1
+      location: AWS GovCloud (US-East)
+      in_region_mantle: false
+      in_region: false
+      geo: true
+      global: false
+    model_card: model-card-anthropic-claude-haiku-5-5.html
   - name: Claude Sonnet 5.5
     regions:
     - region: us-east-1
@@ -8586,27 +8819,30 @@ providers:
       global: false
     model_card: model-card-qwen-qwen3-coder-30b-a3b-instruct.html
   Stability AI:
-  - name: Sd3.5 Large
+  - name: Stable Diffusion 3.5 Large
     regions:
     - region: us-west-2
       location: Oregon
       in_region: true
       geo: false
       global: false
-  - name: Stable Image Core V1:1
+    model_card: model-card-stability-ai-stable-diffusion-3-5-large.html
+  - name: Stable Image Core 1.0
     regions:
     - region: us-west-2
       location: Oregon
       in_region: true
       geo: false
       global: false
-  - name: Stable Image Ultra V1:1
+    model_card: model-card-stability-ai-stable-image-core-1-0.html
+  - name: Stable Image Ultra 1.0
     regions:
     - region: us-west-2
       location: Oregon
       in_region: true
       geo: false
       global: false
+    model_card: model-card-stability-ai-stable-image-ultra-1-0.html
   - name: Stable Image Control Structure
     regions:
     - region: us-east-1

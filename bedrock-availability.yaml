@@ -3939,12 +3939,12 @@ providers:
       global: false
     - region: ap-south-1
       location: Mumbai
-      in_region: true
+      in_region: 'EOL: 2026-09-10'
       geo: true
       global: false
     - region: ap-southeast-1
       location: Singapore
-      in_region: true
+      in_region: 'EOL: 2026-09-10'
       geo: true
       global: false
     - region: ap-southeast-2
@@ -9512,6 +9512,11 @@ providers:
       in_region: false
       geo: true
       global: true
+    - region: ca-west-1
+      location: Calgary
+      in_region: false
+      geo: true
+      global: false
     - region: eu-north-1
       location: Stockholm
       in_region: false

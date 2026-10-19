@@ -3934,17 +3934,17 @@ providers:
       global: false
     - region: ap-northeast-2
       location: Seoul
-      in_region: true
+      in_region: 'EOL: 2026-11-13'
       geo: true
       global: false
     - region: ap-south-1
       location: Mumbai
-      in_region: 'EOL: 2026-09-10'
+      in_region: 'EOL: 2026-11-13'
       geo: true
       global: false
     - region: ap-southeast-1
       location: Singapore
-      in_region: 'EOL: 2026-09-10'
+      in_region: 'EOL: 2026-11-13'
       geo: true
       global: false
     - region: ap-southeast-2

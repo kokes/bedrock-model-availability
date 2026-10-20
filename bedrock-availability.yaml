@@ -9632,6 +9632,16 @@ providers:
       in_region: false
       geo: false
       global: true
+    - region: us-gov-east-1
+      location: AWS GovCloud (US-East)
+      in_region: false
+      geo: true
+      global: false
+    - region: us-gov-west-1
+      location: AWS GovCloud (US-West)
+      in_region: false
+      geo: true
+      global: false
     model_card: model-card-xai-grok-4-7.html
   - name: Grok 4.6
     regions:

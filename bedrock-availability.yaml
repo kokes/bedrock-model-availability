@@ -8803,8 +8803,14 @@ providers:
     - region: us-gov-west-1
       location: AWS GovCloud (US-West)
       in_region_mantle: true
-      in_region: true
-      geo: false
+      in_region: false
+      geo: true
+      global: false
+    - region: us-gov-east-1
+      location: AWS GovCloud (US-East)
+      in_region_mantle: false
+      in_region: false
+      geo: true
       global: false
     model_card: model-card-openai-gpt-54.html
   - name: GPT OSS Safeguard 120B
